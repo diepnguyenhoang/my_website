@@ -12,23 +12,25 @@ Normally, a website includes 3 main parts:
 
 To create a basic website, all we need is a basic text editor (such as Notepad, or Notepad ++). Of course we can consider other applications including: Sublime text, Visual studio go, Brackets...
 
-Once having a text editor installed in your laptop, we need to know about the [Anatomy of HTML elements] (https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started) (which look like syntax with heading and ending signal) and write what we want to show in our website.
+Once having a text editor installed in your laptop, we need to know about the [Anatomy of HTML elements] (https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started). 
+(which look like syntax with heading and ending signal) and write what we want to show in our website.
+
 I wrote my website in the Notepad ++ and named it "index.html"
-![](../images/first-notepad.jpg)
-![](../images/first-web.jpg)
+![](../images/first-notepad.png)
+![](../images/first-web.png)
 
 - CSS
-> "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML" [wikipedia] (https://en.wikipedia.org/wiki/CSS)
+> "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML" [wikipedia] (https://en.wikipedia.org/wiki/CSS).
 
-To create "style" for what we wrote, we need to have another text document featuring the styles we want. Here is some basic styles 
+To create "style" for what we wrote, we need to have another text document featuring the styles we want.
 For example, I want my header will be in red. I will copy the rule in this [guidelines] (https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started) to new text document, and name it styles.css
 > h1 {
   color: red;
 }
 
 To link the style to index.html, we need to write a rule <link rel="stylesheet" href="styles.css"> inside the <head> of our index.html
- ![](../images/second-notepad.jpg)
- ![](../images/second-web.jpg)
+ ![](../images/second-notepad.png)
+ ![](../images/second-web.png)
 
 - JavaScript would not be our focus in this course.
 

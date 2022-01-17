@@ -14,8 +14,8 @@ To create a basic website, all we need is a basic text editor (such as Notepad, 
 
 Once having a text editor installed in your laptop, we need to know about the [Anatomy of HTML elements] (https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started) (which look like syntax with heading and ending signal) and write what we want to show in our website.
 I wrote my website in the Notepad ++ and named it "index.html"
-![](../images/first-notepad.jpg)
-![](../images/first-web.jpg)
+![](../images/first-notepad.png)
+![](../images/first-web.png)
 
 - CSS
 > "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML" [wikipedia] (https://en.wikipedia.org/wiki/CSS)
@@ -27,15 +27,15 @@ For example, I want my header will be in red. I will copy the rule in this [guid
 }
 
 To link the style to index.html, we need to write a rule <link rel="stylesheet" href="styles.css"> inside the <head> of our index.html
- ![](../images/second-notepad.jpg)
- ![](../images/second-web.jpg)
+ ![](../images/second-notepad.png)
+ ![](../images/second-web.png)
 
 - JavaScript would not be our focus in this course.
 
 So basically, a completed website as we have seen in front-end view contains: HTML (content and structure), CSS (style, e.g. colors, elements positions, and text sizes) and Javascript (provide interaction with the users).
 
 
-## Useful links
+## VCS (Version Control System) - Gitlab vs Github
 
 - [Jekyll](http://jekyll.org)
 - [Google](http://google.com)
