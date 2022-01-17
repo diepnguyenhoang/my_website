@@ -1,13 +1,17 @@
-# 1. Principles and practices
+# 2. Project management
 
-1st day of week 1, I worked on defining my final project idea and started to getting used to the documentation process.
+2nd day of week 1, I worked on configuring HTML, VCS (GITLAB, GITHUB) and started to get used to the documentation process.
+To be honest, I did not get familiar with the term "documentation", because in my faculty, we usually use "learning journal" instead. Therefore, if you have similar feeling, you can think it simply as document or make diary of whatever you have learnt. 
 
-## Research
+## HTML, CSS, JavaScript
+Normally, a website includes 3 main parts:
+- HTML
+> "The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript."
+[Wikipedia](https://en.wikipedia.org/wiki/HTML)
+To create a basic website, all we need is a basic text editor (such as Notepad, or Notepad ++). Ofcourse we can consider other applications including: Sublime text, Visual studio go, Brackets...
+Once having a text editor installed in your laptop, we need to know about the Anatomy of HTML elements (which look like syntax with heading and ending signal) and write what we want to show in our website.
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
+So basically, a completed website as we have seen in front-end view contains: HTML (content and structure), CSS (style, e.g. colors, elements positions, and text sizes) and Javascript (provide interaction with the users).
 ## Useful links
 
 - [Jekyll](http://jekyll.org)
