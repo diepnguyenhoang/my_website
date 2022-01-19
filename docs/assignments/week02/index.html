@@ -346,13 +346,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#code-example" class="md-nav__link">
-    Code Example
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -722,13 +715,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#code-example" class="md-nav__link">
-    Code Example
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -753,8 +739,8 @@ Another thing is that, while studying the materials/ watching tutorials, I usual
 <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.<a href="https://en.wikipedia.org/wiki/HTML">Wikipedia</a>.</p>
 </blockquote>
 <p>To create a basic website, all we need is a basic text editor (such as Notepad, or Notepad ++). Of course we can consider other applications including: Sublime text, Visual studio go, Brackets&hellip;</p>
-<p>Once having a text editor installed in your laptop, we need to know about the [Anatomy of HTML elements] (https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started). 
-(which look like syntax with heading and ending signal) and write what we want to show in our website.</p>
+<p>Once having a text editor installed in your laptop, we need to know about the [Anatomy of HTML elements] (https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started). </p>
+<p>(which look like syntax with heading and ending signal) and write what we want to show in our website.</p>
 <p>I wrote my first website in the Notepad ++ and named it &ldquo;index.html&rdquo;
 <img alt="" src="../../images/first-notepad.png" />
 in website interface, it looks like this
@@ -776,39 +762,54 @@ For example, I want my header will be in red. I will write the rule like this to
  <img alt="" src="../../images/second-web.png" /></p>
 <p>3.JavaScript would not be our focus in this course but it is about the interactions/behaviors for users such as a list down menu&hellip; </p>
 <h2 id="vcs-version-control-system-gitlab-vs-github">VCS (Version Control System) - Gitlab vs Github<a class="headerlink" href="#vcs-version-control-system-gitlab-vs-github" title="Permanent link">&para;</a></h2>
-<p>VCS is a software which records changes, permits recall older versions, and enables collaboration. Among VCS softwares, we choose GIT (Gitlab, Github) due to its free, simple, fast, and open platform.
-Since the main aim of this week is to <strong>have my own website deployed in class repository (either gitlab or github)</strong>, so we need to:
-1. Have an account in gitlab or github and create a new project. This will be the place we store our website.
-2. Setup GIT in my computer (install from https://git-scm.com/downloads, and ==configure git== with my name and email address)
-<img alt="" src="../../images/git-config.png" />
-3. Generate SSH keys: we need these keys to authenticate ourselves with the system so that it knows we are the one who owns the project.
-- We have 2 types of SSH keys: private key (which will store in our local file), and public key (which everyone can see and get)
-- To create SSH keys: I type the command <em>ssh-keygen -t rsa -C &ldquo;your.email@example.com&rdquo; -b 4096</em> into the Git CMD
-<img alt="" src="../../images/ssh-key-1.jpg" />
-Then it will generate the 2 keys in my local repo.
-<img alt="" src="../images/ssh-key-2.jpg" /> 
-To pair up with the remote repo in gitlab, we need to open the file .pub in text document
-<img alt="" src="../../images/ssh-key-3.jpg" /> 
-and copy it into our gitlab project (Preferences/SSH Keys)
-<img alt="" src="../../images/ssh-key-4.jpg" />
-<img alt="" src="../../images/ssh-key-5.jpg" />
-4. Download the remote repository to our computer (creating a local repository), we need to clone it by using ==git clone==</p>
-<h2 id="code-example">Code Example<a class="headerlink" href="#code-example" title="Permanent link">&para;</a></h2>
-<p>Use the three backticks to separate code.</p>
-<div class="codehilite"><pre><span></span><code>// the setup function runs once when you press reset or power the board
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-}
-
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
-}
+<p>VCS is a software which records changes, permits recall older versions, and enables collaboration. Among VCS softwares, we choose GIT (Gitlab, Github) due to its free, simple, fast, and open platform.</p>
+<p>Since the main aim of this week is to <strong>have my own website deployed in class repository (either gitlab or github)</strong>, so we need to:</p>
+<ol>
+<li>
+<p>Have an account in gitlab or github and create a new project. This will be the place we store our website.</p>
+</li>
+<li>
+<p>Setup GIT in my computer (install from <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>, and <em>configure git</em> with my name and email address)
+<img alt="" src="../../images/git-config.png" /></p>
+</li>
+<li>
+<p>Generate SSH keys: we need these keys to authenticate ourselves with the system so that it knows we are the one who owns the project.</p>
+</li>
+<li>
+<p>We have 2 types of SSH keys: private key (which will store in our local file), and public key (which everyone can see and get)</p>
+</li>
+<li>
+<p>To create SSH keys: I type the command <em>ssh-keygen -t rsa -C &ldquo;your.email@example.com&rdquo; -b 4096</em> into the Git CMD</p>
+</li>
+</ol>
+<p><img alt="" src="../../images/ssh-key-1.jpg" /></p>
+<p>Then it will generate the 2 keys in my local repo.</p>
+<p><img alt="" src="../images/ssh-key-2.jpg" /></p>
+<p>To pair up with the remote repo in gitlab, we need to open the file .pub in text document</p>
+<p><img alt="" src="../../images/ssh-key-3.jpg" /></p>
+<p>and copy it into our gitlab project (Preferences/SSH Keys)</p>
+<p><img alt="" src="../../images/ssh-key-4.jpg" /></p>
+<p><img alt="" src="../../images/ssh-key-5.jpg" /></p>
+<ol>
+<li>Download the remote repository to our computer (creating a local repository), we need to clone it by using <em>git clone url</em></li>
+</ol>
+<p>To get the URL, we need to go to our project created in gitlab, and copy it to the command</p>
+<p><img alt="" src="../../images/git-clone-1.jpg" /></p>
+<p>In the Git CMD, I had trouble on pasting the SSH URL, so I tried with the HTTPS and it worked.</p>
+<p><img alt="" src="../../images/git-clone-2.jpg" /></p>
+<p>After that, in our local repo, you will find a README text documentation, and that means we have successfully linked to the local repo from the remote repo.
+Now, we can add our index.html and styles.css to the local folder.</p>
+<p><img alt="" src="../../images/git-clone-3.jpg" /></p>
+<ol>
+<li>Update the remote repo: any changes or modification from the local repo need to be updated so as to see in the remote repo. In the GIT CMD</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>git status =&gt; to check the status of the remote repo
+git add . =&gt; to add any changes
+git commit -m &quot;message&quot; =&gt; to commit/confirm our modification
+git push =&gt; to update and move the changes to remote repo
 </code></pre></div>
+
+<p><img alt="" src="../../images/git-add.jpg" /></p>
 
               
             </article>

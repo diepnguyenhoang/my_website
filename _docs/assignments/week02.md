@@ -14,6 +14,7 @@ Normally, a website includes 3 main parts: HTML (content and structure), CSS (st
 To create a basic website, all we need is a basic text editor (such as Notepad, or Notepad ++). Of course we can consider other applications including: Sublime text, Visual studio go, Brackets...
 
 Once having a text editor installed in your laptop, we need to know about the [Anatomy of HTML elements] (https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started). 
+
 (which look like syntax with heading and ending signal) and write what we want to show in our website.
 
 I wrote my first website in the Notepad ++ and named it "index.html"
@@ -42,40 +43,58 @@ To link the style to index.html, we need to write a rule <link rel="stylesheet" 
 ## VCS (Version Control System) - Gitlab vs Github
 
 VCS is a software which records changes, permits recall older versions, and enables collaboration. Among VCS softwares, we choose GIT (Gitlab, Github) due to its free, simple, fast, and open platform.
+
 Since the main aim of this week is to **have my own website deployed in class repository (either gitlab or github)**, so we need to:
+
 1. Have an account in gitlab or github and create a new project. This will be the place we store our website.
-2. Setup GIT in my computer (install from https://git-scm.com/downloads, and ==configure git== with my name and email address)
+
+2. Setup GIT in my computer (install from <https://git-scm.com/downloads>, and *configure git* with my name and email address)
 ![](../images/git-config.png)
+
 3. Generate SSH keys: we need these keys to authenticate ourselves with the system so that it knows we are the one who owns the project.
+
 - We have 2 types of SSH keys: private key (which will store in our local file), and public key (which everyone can see and get)
+
 - To create SSH keys: I type the command *ssh-keygen -t rsa -C "your.email@example.com" -b 4096* into the Git CMD
+
 ![](../images/ssh-key-1.jpg)
+
 Then it will generate the 2 keys in my local repo.
-![](../images/ssh-key-2.jpg) 
+
+![](../images/ssh-key-2.jpg)
+
 To pair up with the remote repo in gitlab, we need to open the file .pub in text document
-![](../images/ssh-key-3.jpg) 
+
+![](../images/ssh-key-3.jpg)
+
 and copy it into our gitlab project (Preferences/SSH Keys)
+
 ![](../images/ssh-key-4.jpg)
+
 ![](../images/ssh-key-5.jpg)
-4. Download the remote repository to our computer (creating a local repository), we need to clone it by using ==git clone==
 
+4. Download the remote repository to our computer (creating a local repository), we need to clone it by using *git clone url*
 
-## Code Example
+To get the URL, we need to go to our project created in gitlab, and copy it to the command
 
-Use the three backticks to separate code.
+![](../images/git-clone-1.jpg)
+
+In the Git CMD, I had trouble on pasting the SSH URL, so I tried with the HTTPS and it worked.
+
+![](../images/git-clone-2.jpg)
+
+After that, in our local repo, you will find a README text documentation, and that means we have successfully linked to the local repo from the remote repo.
+Now, we can add our index.html and styles.css to the local folder.
+
+![](../images/git-clone-3.jpg)
+
+5. Update the remote repo: any changes or modification from the local repo need to be updated so as to see in the remote repo. In the GIT CMD
 
 ```
-// the setup function runs once when you press reset or power the board
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-}
-
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
-}
+git status => to check the status of the remote repo
+git add . => to add any changes
+git commit -m "message" => to commit/confirm our modification
+git push => to update and move the changes to remote repo
 ```
+
+![](../images/git-add.jpg)
