@@ -13,12 +13,11 @@ Normally, a website includes 3 main parts: HTML (content and structure), CSS (st
 
 To create a basic website, all we need is a basic text editor (such as Notepad, or Notepad ++). Of course we can consider other applications including: Sublime text, Visual studio go, Brackets...
 
-Once having a text editor installed in your laptop, we need to know about the [Anatomy of HTML elements] (https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started). 
-
-(which look like syntax with heading and ending signal) and write what we want to show in our website.
+Once having a text editor installed in your laptop, we need to know about the *Anatomy of HTML elements* <https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started> (which look like syntax with heading and ending signal) and write what we want to show in our website.
 
 I wrote my first website in the Notepad ++ and named it "index.html"
 ![](../images/first-notepad.png)
+
 in website interface, it looks like this
 ![](../images/first-web.png)
 
@@ -44,7 +43,7 @@ To link the style to index.html, we need to write a rule <link rel="stylesheet" 
 
 VCS is a software which records changes, permits recall older versions, and enables collaboration. Among VCS softwares, we choose GIT (Gitlab, Github) due to its free, simple, fast, and open platform.
 
-Since the main aim of this week is to **have my own website deployed in class repository (either gitlab or github)**, so we need to:
+Since the main aim of this week is to **have my own website deployed in class repository (either gitlab or github)**, so we need to do following steps:
 
 1. Have an account in gitlab or github and create a new project. This will be the place we store our website.
 
@@ -53,45 +52,110 @@ Since the main aim of this week is to **have my own website deployed in class re
 
 3. Generate SSH keys: we need these keys to authenticate ourselves with the system so that it knows we are the one who owns the project.
 
-- We have 2 types of SSH keys: private key (which will store in our local file), and public key (which everyone can see and get)
+	- We have 2 types of SSH keys: private key (which will store in our local file), and public key (which everyone can see and get)
 
-- To create SSH keys: I type the command *ssh-keygen -t rsa -C "your.email@example.com" -b 4096* into the Git CMD
+	- To create SSH keys: I type the command *ssh-keygen -t rsa -C "your.email@example.com" -b 4096* into the Git CMD
 
-![](../images/ssh-key-1.jpg)
+	![](../images/ssh-key-1.jpg)
 
-Then it will generate the 2 keys in my local repo.
+	Then it will generate the 2 keys in my local repo.
 
-![](../images/ssh-key-2.jpg)
+	![](../images/ssh-key-2.jpg)
 
-To pair up with the remote repo in gitlab, we need to open the file .pub in text document
+	To pair up with the remote repo in gitlab, we need to open the file .pub in text document
 
-![](../images/ssh-key-3.jpg)
+	![](../images/ssh-key-3.jpg)
 
-and copy it into our gitlab project (Preferences/SSH Keys)
+	and copy it into our gitlab project (Preferences/SSH Keys)
 
-![](../images/ssh-key-4.jpg)
+	![](../images/ssh-key-4.jpg)
 
-![](../images/ssh-key-5.jpg)
+	![](../images/ssh-key-5.jpg)
 
-4. Download the remote repository to our computer (creating a local repository), we need to clone it by using *git clone*
+4. Download the remote repository to our computer (creating a local repository), we need to clone it by using *git clone url*
 
+	To get the URL, we need to go to our project created in gitlab, and copy it to the command
 
-## Code Example
+	![](../images/git-clone-1.jpg)
 
-Use the three backticks to separate code.
+	In the Git CMD, I had trouble on pasting the SSH URL, so I tried with the HTTPS as suggested from <https://gitlab.com/gitlab-org/gitlab-foss/-/issues/54518> and it worked.
+
+	![](../images/git-clone-2.jpg)
+
+	After that, in our local repo, you will find a README text documentation, and that means we have successfully linked to the local repo from the remote repo.
+	Now, we can add our index.html and styles.css to the local folder.
+
+	![](../images/git-clone-3.jpg)
+
+5. Update the remote repo: any changes or modification from the local repo need to be updated so as to see in the remote repo. In the GIT CMD
 
 ```
-// the setup function runs once when you press reset or power the board
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-}
-
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
-}
+git status => to check the status of the remote repo
+git add . => to add any changes
+git commit -m "message" => to commit/confirm our modification
+git push => to update and move the changes to remote repo
 ```
+
+	![](../images/git-add.jpg)
+
+6. Host/Deploy our website in github
+
+I have been setting up using gitlab account, however, to facilitate the website deployment, we need to also set up CI/CD Pipelines which will help to automate our software delivery process. Unfortunately, gitlab will ask us to fill in our credit card information in order to use this function. It is a bit inconvenient for me to do so. Therefore, I will use github instead and set up from the beginning, but this time, we will write website using Markdowns (not HTML). 
+	
+	- Create new project in github
+	- Create new folder (local repository) for the website
+	- Copy the files template downloaded from the gitlab website (see the Markdown session below) to the local repo 
+	- Remove the 2 files which we don’t need for github
+		![](../images/github-template.jpg)
+	
+	- Go to Docs to edit the index.html (home page) and other pages if you want
+	```
+	Important tip 
+	- rename *docs* folder to *_docs* => anything we want to modify for our website in local repo will be excuted in this folder.
+	- create new folder and name it: *docs* => do not touch this folder, this will store data generated from the remote repo.
+	- open mkdocs.yml in notepad++ => change to relevant information, such as: site name... and especially docs_dir: change from "docs" to "_docs", and site_dir: change from "site" to "docs"
+	```
+	![](../images/github-edit.jpg)
+	
+	- Push the local repo to the remote repo using the guideline below. Make sure you are in the correct directory of the website in command line
+	![](../images/github-guideline.jpg)
+	
+	After the git push, our remote repo should show the similar files as our local repo.
+	
+	![](../images/github-after.jpg)
+	
+	- At this stage, there will be one folder *docs* missing in the remote repo. Here, we need to go to the Setting in our github project, choose Pages
+	
+	![](../images/github-pages.jpg)
+	
+	Go to command line (not git cmd), tell the system to build docs file => type mkdocs build
+	![](../images/github-mkdocs.jpg)
+	
+	Git status
+	![](../images/github-status.jpg)
+	
+	Git add .
+	![](../images/github-add.jpg)
+	
+	Git commit
+	![](../images/github-commit.jpg)
+	
+	Git push
+	![](../images/github-push.jpg)
+	
+	We will finally have linked the file "docs" from local repo to remote repo
+	![](../images/github-after.jpg)
+	
+	Any modification is done later in local repo must be updated in remote repo following mkdocs build > git status > git add > git commit > git push.
+	
+	
+## Markdown - MKDOCS (useful link)
+
+- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+- [Mkdocs-themes] https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes
+
+https://www.mkdocs.org/user-guide/installation/#installing-mkdocs
+https://www.mkdocs.org/getting-started/
+
+	
+
