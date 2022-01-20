@@ -146,16 +146,15 @@ I have been setting up using gitlab account, however, to facilitate the website 
 	We will finally have linked the file "docs" from local repo to remote repo
 	![](../images/github-after.jpg)
 	
-	Any modification is done later in local repo must be updated in remote repo following mkdocs build > git status > git add > git commit > git push.
+Any modification is done later in local repo must be updated in remote repo following mkdocs build > git status > git add > git commit > git push.
 	
 	
 ## Markdown - MKDOCS (useful link)
 
 - [Markdown](https://en.wikipedia.org/wiki/Markdown)
 - [Mkdocs-themes] https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes
-
-https://www.mkdocs.org/user-guide/installation/#installing-mkdocs
-https://www.mkdocs.org/getting-started/
+- Install mkdocs <https://www.mkdocs.org/user-guide/installation/#installing-mkdocs>
+- <https://www.mkdocs.org/getting-started/>
 
 	
 
