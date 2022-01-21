@@ -1,4 +1,4 @@
-# 5. Electronics production
+# 5. Invention, intellectual property and income
 
 This week I worked on defining my final project idea and started to getting used to the documentation process.
 
