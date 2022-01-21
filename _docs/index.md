@@ -2,9 +2,8 @@
 
 ## Welcome to my learning portfolio!
 
-![](./images/week01/assignment-photo.jpg)
+![](./images/week01/photo.jpg)
 
-## Welcome to my new Fab Academy site
 
-This is Diep Nguyen's blog for the Fab Academy.
+This is Diep Nguyen's blog for the Fablab Project Management course.
 
