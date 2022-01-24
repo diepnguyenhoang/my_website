@@ -150,7 +150,7 @@ Any modification is done later in local repo must be updated in remote repo foll
 ## Markdown - MKDOCS (useful link)
 
 - [Markdown](https://en.wikipedia.org/wiki/Markdown)
-- [Mkdocs-themes] (https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes)
+- [Mkdocs-themes] <https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes>
 - Install mkdocs <https://www.mkdocs.org/user-guide/installation/#installing-mkdocs>
 - <https://www.mkdocs.org/getting-started/>
 

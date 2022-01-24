@@ -9,7 +9,7 @@ In this week, I have been introduced various types of computer-aided design tool
 - Model (raster, vector, 2D, 3D, render, animate, simulate, ...) a possible final project, compress images and videos.
 
 
-## 2D
+## 2D Design
 
 There are 2 types of 2D graphics: raster graphics and vector graphics. While raster images are in pixels, vector graphics are in geometric primitives (lines, curves)
 Most photos are in raster images (tiff, jpeg, gif, pcx, bmp), vector graphics are usually in ai, eps, svg, pdf format.
@@ -18,31 +18,54 @@ With processing 2D graphics, I have explored GIMP & INKSCAPE software.
 
 ### GIMP
 
+I have designed a snowflake using GIMP following <https://www.youtube.com/watch?v=6VWn1qO0irE>
+
+1. Create a new image, remmember to set the view *Show grid* for better calculation
+
+![](../images/week02/snow-1.png)
+
+2. Choose *ellipse* to draw a circle and check on the option of *Expand from center*
+
+![](../images/week02/snow-2.jpg)
+
+3. Choose *Paintbrush tool/Pencil* , and its color (I chose purple) to draw the first line vertically from the center. To make it straight, draw a dot in the center, press *shift*, then draw to the edge of the circle
+
+![](../images/week02/snow-3.jpg)
+
+4. Press *shift+R* to open a *Rotate*, input *30* to the *Angle* because I would like to make a snowflake with 12 petals. Do the same for 11 remaining petals
+
+![](../images/week02/snow-4.jpg)
+
+5. In *layer*, choose to create a new layer (I named it layer 1), remmember to choose *Fill with transparency* 
+
+![](../images/week02/snow-5.jpg)
+
+6. Draw a new circle and 3 lines overlapped with the previous lines but with black color
+
+![](../images/week02/snow-6.jpg)
+
+7. Choose *Paintbrush tool/Pencil* with different sizes and mark on the black lines. This will later create a shape of a snowflake petals
+
+![](../images/week02/snow-7.jpg)
+
+8. Choose *Erase tool* and its size to remove/sharpen the petals
+
+![](../images/week02/snow-8.jpg)
+
+9. After removing the previous layer (layer with purple lines), we have a snowflake as below.
+
+![](../images/week02/snow-9.jpg)
 
 
 
+## 3D Design
 
-## 3D
-
-![](../images/sample-photo.jpg)
 
 ### Fusion 360
+
 
 
 <iframe src="https://player.vimeo.com/video/10048961" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/10048961">Sound Waves</a> from <a href="https://vimeo.com/radarboy">George Gally (Radarboy)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-### From Youtube
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jjNgJFemlC4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-## 3D Models
-
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Dita&#39;s Gown</a>
-    by <a href="https://sketchfab.com/francisbitontistudio?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Francis Bitonti Studio</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-</p>
-</div>
