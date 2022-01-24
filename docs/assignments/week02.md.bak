@@ -89,32 +89,30 @@ Since the main aim of this week is to **have my own website deployed in class re
 
 5. Update the remote repo: any changes or modification from the local repo need to be updated so as to see in the remote repo. In the GIT CMD
 
-```
-git status => to check the status of the remote repo
-git add . => to add any changes
-git commit -m "message" => to commit/confirm our modification
-git push => to update and move the changes to remote repo
-```
-
-	![](../images/git-add.jpg)
+	```
+	git status => to check the status of the remote repo
+	git add . => to add any changes
+	git commit -m "message" => to commit/confirm our modification
+	git push => to update and move the changes to remote repo
+	```
 
 6. Host/Deploy our website in github
 
-I have been setting up using gitlab account, however, to facilitate the website deployment, we need to also set up CI/CD Pipelines which will help to automate our software delivery process. Unfortunately, gitlab will ask us to fill in our credit card information in order to use this function. It is a bit inconvenient for me to do so. Therefore, I will use github instead and set up from the beginning, but this time, we will write website using Markdowns (not HTML). 
+	I have been setting up using gitlab account, however, to facilitate the website deployment, we need to also set up CI/CD Pipelines which will help to automate our software delivery process. Unfortunately, gitlab will ask us to fill in our credit card information in order to use this function. It is a bit inconvenient for me to do so. Therefore, I will use github instead and set up from the beginning, but this time, we will write website using Markdowns (not HTML). 
 	
 	- Create new project in github
 	- Create new folder (local repository) for the website
 	- Copy the files template downloaded from the gitlab website (see the Markdown session below) to the local repo 
 	- Remove the 2 files which we don’t need for github
-		![](../images/github-template.jpg)
+	![](../images/github-template.jpg)
 	
 	- Go to Docs to edit the index.html (home page) and other pages if you want
-	```
-	Important tip 
+	
+	**Important tip**
 	- rename *docs* folder to *_docs* => anything we want to modify for our website in local repo will be excuted in this folder.
 	- create new folder and name it: *docs* => do not touch this folder, this will store data generated from the remote repo.
 	- open mkdocs.yml in notepad++ => change to relevant information, such as: site name... and especially docs_dir: change from "docs" to "_docs", and site_dir: change from "site" to "docs"
-	```
+	
 	![](../images/github-edit.jpg)
 	
 	- Push the local repo to the remote repo using the guideline below. Make sure you are in the correct directory of the website in command line
