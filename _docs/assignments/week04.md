@@ -16,7 +16,7 @@ This week I worked on the processes involved in using vinyl cutter and laser cut
 ### Preparing the design
 I chose to use Inkscape for design preparation
 
-- I firstly download my favorite image since I am not good at drawing (https://www.vecteezy.com/vector-art/4988938-flying-beauty-pink-butterfly)
+- I firstly download my favorite image since I am not good at drawing <https://www.vecteezy.com/vector-art/4988938-flying-beauty-pink-butterfly>
 - In the Inkscape, I go to *Files > Import* and choose the downloaded image 
 - Then I use *trace bitmap* in Inkscape because the vinyl cutter files must only contain vectors (and images we downloaded are mostly raster). So I will right click the image and select Trace bitmap, or go to tab Path > Trace bitmap, or Shift + Alt + B. In the pop-up window of Trace Bitmap, choose Edge detection, and it converts as below
 
@@ -47,7 +47,7 @@ At the University of Oulu, we use  Roland CAMM-1 GS24 vinyl cutter.
 
 ## Characterizing laser cutter
 
-For understanding the nature and features of the laser cutter, as a group, we worked mostly with Epilog Fusion M2 40 Laser 75 Watt which is larger than the other mini laser cutter.
+For understanding the nature and features of the laser cutter, as a group of four (Kecheng Zhang, Antti R, Antti Pantti and me), we worked mostly with Epilog Fusion M2 40 Laser 75 Watt which is larger than the other mini laser cutter.
 
 ### With the machine
 
@@ -108,11 +108,45 @@ The picture from our instructor (Ms. Behnaz) is a good demonstration to understa
 		
 		![](../images/week04/kerf05.jpg) 
 		
-	- With Acrylic material:
+	- With Acrylic material: we observed that actual size of the 10 small rectangles are 98.98mm. As such the Kerf is 0.102mm for this case.
 	
-		
-		
-		
+		![](../images/week04/kerf06.jpg)
+
+### Power - Speed - Frequency - DPI
+
+For checking out the effect of Power, Speed, Frequency, DPI on the cutting/engraving quality, we used MDF 3mm and Acrylic 3mm to demonstrate this.
+
+With the MDF 3mm: 
+
+- Firstly, we keep the Frequency constant, and adjust the Power and Speed.
+
+Power | Speed | Freg | Observation
+:------:|:-------:|:------:|:------------|
+100	|15 |20	|Cut thru|
+100	|5	|20	|Cut thru but very slow|
+100	|40	|20	|Not cut thru due to fast speed|
+50	|15 |20 |Not cut thru due to too low evergy|
+80	|15	|20	|Cut thru|
+
+![](../images/week04/powerspeed.jpg) 
+
+We observed that with slow speed, the machine works well in cutting through the material, while if we set the machine run fast, it hardly to cut. Additionally, with low power(50) MDF 3mm cannot be cut cannot cut but we can make use of this figure to engrave for example. Interestingly, with just 80% power, the square can be cut easily, which is a good consideration for power saving. 
+
+- Next, we adjusted the frequency and keep the power (100) and speed (15) constant to see what would happen.
+The frequency was change from 20, 5, 40, 60, 80 but there were not so many differnces we could observe,because all were well-cut
+
+![](../images/week04/frequency.jpg) 
+
+- To check the engraving quality, we kept the Speed (50) and DPI (300) unchanged while adjusted the Power (from 20, 50, and 100). 
+It is also important to note that the color of all 3 pictures should be the same or else it will not describe correctly the effect.
+It can be clearly seen that with less power, the engraved parts are lighter than those of strong power.
+
+![](../images/week04/dpi.jpg) 
+
+#### 
+
+
+
 
 ## Making with laser cutter
 
