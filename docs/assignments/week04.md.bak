@@ -22,21 +22,14 @@ I chose to use Inkscape for design preparation
 ![](../images/week04/vinyl01.jpg)
 
 - Next, I would need to *draw a rectangle* around the image as a frame. By doing this, it will be much easier for later peeling. Here I have problem when drawing a rectangle because it just showed the dot lines of the frame instead of the visible straight lines. So I tried to check the *Fill and Stroke* of the rectangle, and it should be flat color in stroke paint, and no color in Fill instead.
-
 ![](../images/week04/vinyl02.jpg)
 ![](../images/week04/vinyl03.jpg)
 
 - Then I *Ctrl A* to choose all (a butterfly and a rectangle) and go to File > Document Properties > Resize page to drawing
 
-![](../images/week04/vinyl04.jpg)
-![](../images/week04/vinyl05.jpg)
-
 - Next I need to configure the Fill and Stroke of the whole image (select all > click Object > Fill and Stroke) , I chose X (no color) for the Fill, Flat color for the Stroke paint, and 0.02mm width for the Stroke style
 
-![](../images/week04/vinyl06.jpg)
-
 Then this picture is ready to print. But I prepared it at home, so I need to copy it in .svg format to memory stick and go to Fablab to print
-
 ### Cutting with vinyl cutter
 
 At the University of Oulu, we use  Roland CAMM-1 GS24 vinyl cutter.
