@@ -22,14 +22,21 @@ I chose to use Inkscape for design preparation
 ![](../images/week04/vinyl01.jpg)
 
 - Next, I would need to *draw a rectangle* around the image as a frame. By doing this, it will be much easier for later peeling. Here I have problem when drawing a rectangle because it just showed the dot lines of the frame instead of the visible straight lines. So I tried to check the *Fill and Stroke* of the rectangle, and it should be flat color in stroke paint, and no color in Fill instead.
+
 ![](../images/week04/vinyl02.jpg)
 ![](../images/week04/vinyl03.jpg)
 
 - Then I *Ctrl A* to choose all (a butterfly and a rectangle) and go to File > Document Properties > Resize page to drawing
 
+![](../images/week04/vinyl04.jpg)
+![](../images/week04/vinyl05.jpg)
+
 - Next I need to configure the Fill and Stroke of the whole image (select all > click Object > Fill and Stroke) , I chose X (no color) for the Fill, Flat color for the Stroke paint, and 0.02mm width for the Stroke style
 
+![](../images/week04/vinyl06.jpg)
+
 Then this picture is ready to print. But I prepared it at home, so I need to copy it in .svg format to memory stick and go to Fablab to print
+
 ### Cutting with vinyl cutter
 
 At the University of Oulu, we use  Roland CAMM-1 GS24 vinyl cutter.
@@ -53,21 +60,20 @@ For understanding the nature and features of the laser cutter, as a group, we wo
 		
 		○ JOB: is where we choose the file we need to implement 
 
-	Remember that after each adjustment, we need to press the joystick so that the system can save our setting.
+- Remember that after each adjustment, we need to press the joystick so that the system can save our setting.
 
-	After the 3 setting, the screen will display the amount of time spending for the job.
-	
-	Click GO to start cutting/engraving
+- After the 3 setting, the screen will display the amount of time spending for the job.
+
+- Click GO to start cutting/engraving
 	
 ### Important safety instructions: 
 
 
 ```
-// Since the laser cutter is the most dangerous machine in any Fablab, so we should:
+Since the laser cutter is the most dangerous machine in any Fablab, so we should:
 ○ NEVER Turn our back to the machine when it is cutting
 ○ Wait at least 1 minute after the machine finishes the cutting, and open the lid. Because the combution of some cutting materials may catch fire when exposing with air, so we need to wait for the exhaust pull away the gases
 ○ In case there is fire, (1) cover the place with the 'fire blanket' (near the sink in the Fablab), (2) bring the material out of the machine, (3) use the fire extinguisher.
-}
 ```
 
 ### Kerf

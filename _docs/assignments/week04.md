@@ -15,6 +15,7 @@ This week I worked on the processes involved in using vinyl cutter and laser cut
 
 ### Preparing the design
 I chose to use Inkscape for design preparation
+
 - I firstly download my favorite image since I am not good at drawing (https://www.vecteezy.com/vector-art/4988938-flying-beauty-pink-butterfly)
 - In the Inkscape, I go to *Files > Import* and choose the downloaded image 
 - Then I use *trace bitmap* in Inkscape because the vinyl cutter files must only contain vectors (and images we downloaded are mostly raster). So I will right click the image and select Trace bitmap, or go to tab Path > Trace bitmap, or Shift + Alt + B. In the pop-up window of Trace Bitmap, choose Edge detection, and it converts as below
@@ -60,21 +61,20 @@ For understanding the nature and features of the laser cutter, as a group, we wo
 		
 		○ JOB: is where we choose the file we need to implement 
 
-	Remember that after each adjustment, we need to press the joystick so that the system can save our setting.
+- Remember that after each adjustment, we need to press the joystick so that the system can save our setting.
 
-	After the 3 setting, the screen will display the amount of time spending for the job.
-	
-	Click GO to start cutting/engraving
+- After the 3 setting, the screen will display the amount of time spending for the job.
+
+- Click GO to start cutting/engraving
 	
 ### Important safety instructions: 
 
 
 ```
-// Since the laser cutter is the most dangerous machine in any Fablab, so we should:
+Since the laser cutter is the most dangerous machine in any Fablab, so we should:
 ○ NEVER Turn our back to the machine when it is cutting
 ○ Wait at least 1 minute after the machine finishes the cutting, and open the lid. Because the combution of some cutting materials may catch fire when exposing with air, so we need to wait for the exhaust pull away the gases
 ○ In case there is fire, (1) cover the place with the 'fire blanket' (near the sink in the Fablab), (2) bring the material out of the machine, (3) use the fire extinguisher.
-}
 ```
 
 ### Kerf
