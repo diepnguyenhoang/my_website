@@ -42,7 +42,51 @@ Then this picture is ready to print. But I prepared it at home, so I need to cop
 
 At the University of Oulu, we use  Roland CAMM-1 GS24 vinyl cutter.
 
+![](../images/week04/vinyl07.jpg)
 
+>	1. Loading lever: we push it to the back to load the sheet and adjust the rollers, and pull it to the front to fix the position to cut. Remember that the lever should be in the front position (we can view as locked) when cutting. 
+>	2. White strips are places where we should place the rollers.
+>	3. There are 2 rollers which play as positioning the width of the sheet.
+>	4. Cutting carriage: there is a very small blade installed here. The cutting will move from left to right to cut.
+>	5. Operation Panel (on the right of the machine): there are 3 selections available for material a) roll:the machine will measure the distance between the rollers and is mostly used for the rolling cutting sheet b) piece: the machine will measure length and width of the sheet and c) edge: the machine will measure the distance between the rollers and moves the blade to the left edge of the sheet.
+
+![](../images/week04/vinyl08.jpg)
+
+- For setting the vinyl cutter for my image, I chose *edge* 
+- Then I loaded the sheet under the rollers
+- Back to the computer, I opened my image in Inskcape, and moved my image to CutStudio by choosing *Extention* tab > Roland CutStudio > Open in CutStudio.
+
+![](../images/week04/vinyl09.jpg)
+
+- In CutStudio, I pressed Ctr P to print (remember to choose the correct cutting machine)
+
+![](../images/week04/vinyl10.jpg)
+
+- Back to the Operation Panel, I pressed Enter to start cutting.
+
+![](../images/week04/vinyl11.jpg)
+
+- Since the image I chose has so many small details, the machine somehow peeled it while cutting.
+
+![](../images/week04/vinyl12.jpg)
+
+- I would better choose another good example to demonstrate the vinyl cutting later, now I just sticked with it and try to peel it (I used a tweezer to help me). You can see some details in my cutting have to be sacrified.
+
+![](../images/week04/vinyl13.jpg)
+
+- After removing the unwanted parts, I used a piece of paper adhesive sheet to help moving my sticker to the desired place
+
+![](../images/week04/vinyl14.jpg)
+
+- I sticked it on my laptop
+
+![](../images/week04/vinyl15.jpg)
+
+Apparently, we should consider the details of our image when vinyl cutting. So this time, I chose another better one, and repeated the above steps
+
+![](../images/week04/vinyl16.jpg)
+![](../images/week04/vinyl17.jpg)
+![](../images/week04/vinyl18.jpg)
 
 
 ## Characterizing laser cutter
