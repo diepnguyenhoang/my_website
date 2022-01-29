@@ -164,13 +164,13 @@ With the MDF 3mm:
 
 - Firstly, we keep the Frequency constant, and adjust the Power and Speed.
 
-Power | Speed | Freg | Observation
-:------:|:-------:|:------:|:------------|
-100	|15 |20	|Cut thru|
-100	|5	|20	|Cut thru but very slow|
-100	|40	|20	|Not cut thru due to fast speed|
-50	|15 |20 |Not cut thru due to too low evergy|
-80	|15	|20	|Cut thru|
+| Power | Speed | Freg 	| Observation |
+|:-----:|:-----:|:-----:|:-----------|
+|100	|15 	|20		|Cut thru |
+|100	|5		|20		|Cut thru but very slow|
+|100	|40		|20		|Not cut thru due to fast speed|
+|50		|15 	|20 	|Not cut thru due to too low evergy|
+|80		|15		|20		|Cut thru|
 
 ![](../images/week04/powerspeed.jpg) 
 
@@ -193,6 +193,169 @@ It can be clearly seen that with less power, the engraved parts are lighter than
 
 
 ## Making with laser cutter
+
+In this assignment, I have to design and make a press-fit construction kit by my own. Most importantly, it should be parametric design without using Inkscape.
+So that means I have to consider using 3D design software which is quite challenging for me as a newbie within a week. However, I decided to use Autodesk Fusion 360 since I already asked for the student account installation.
+Anyway, with the support of my instructors and peers, I did it and can finally create a nice thing.
+
+### Sketch a design
+
+I firstly drew on paper what I wanted to make, and it is a pen holder. 
+It will have 4 rectangles (as pillars) to hold 4 circles with empty inside and 1 circle as a base.
+
+![](../images/week04/sketch.jpg) 
+
+### Design on Fusion 360
+
+1. I click on **Create sketch** and choose a surface I want to draw. It was a TOP
+2. In the *Create*, I choose a circle shape. It will then appear a small window of *Sketch palette* on the right hand, and I choose **Center diameter circle** to draw a circle from the central point.
+
+![](../images/week04/fusion1.jpg)
+
+3. I input the diameter of the circle as **100mmm**, and draw a smaller circle inside with 70mm in diameter.
+
+![](../images/week04/fusion2.jpg)
+
+4. Then I draw another smaller circle inside with **70mm** in diameter.
+
+![](../images/week04/fusion3.jpg)
+
+5. In the *Create*, I choose to draw **Rectangle** (2-point rectangle) inside the big circle. This will be made as a joint in a press-fit construction later. I temporarily set the height as 8mm and width as 3mm.
+
+![](../images/week04/fusion4.jpg)
+
+6. I need to define my own parameter so that it will be more convenient if later I want to change some dimensions which related to each other, they will be changed accordingly.
+
+- I go to *Modify*, select **Change Parameters**, click + and define parameter in my own words.
+- I especially choose the **Material_thickness** as 3mm because I plan to cut in the MDF 3mm. 
+- For the **Kerf**, I define it as 0.1mm because as we test above, the kerf for cutting joint slot with MDF 3mm is around 0.13mm. We can change it later if after cutting it does not fit.
+- I also define the **slot_width**=Material_thickness-Kerf.
+
+![](../images/week04/fusion5.jpg)
+
+7. After clicking OK to set the parameters, I go back to the sketch and change the name of the dimensions. By double click on the dimensions, for example the 8mm of the slot, I will type slot_height.
+I do the same for the other dimensions (big_cirle, small_circle, slot_width)
+
+![](../images/week04/fusion8.jpg)
+
+8. Next, to make a slot, I need to **Trimm** or remove (click on the scissor shape) the unnecessary parts of the rectangle.
+
+![](../images/week04/fusion9.jpg)
+![](../images/week04/fusion10.jpg)
+
+9. I need to make the slot height constrainted to make sure they will always fix and position. So in the tab **Constraint**, I choose the icon of equal (=), and click the 2 sides of the slot.
+
+![](../images/week04/fusion11.jpg)
+
+10. Now I have 2 circles and a slot with constraint. It is nearly similar to my sketch, except I need 3 more slots. 
+So here the instructor advices me to use a tool called **Circular Pattern** in the *Create* tab. This function will allow us to duplicate the sketch in an arc or circular pattern
+
+![](../images/week04/fusion12.jpg)
+
+As a *Circular pattern* window pops up, I do step by step as the guideline. First, for the *Object*, I select the 3 sides of the slot. Second, for the *Center Point*, I select the big circle. Then, I select Full for the *Angular Spacing* because I want the slots go around the circle. Finally, I choose 4 for the *Quantity*
+
+![](../images/week04/fusion13.jpg)
+
+Now I have 4 slots on the big circle. But at the 3 new slots we need to trim the unwanted parts on the cirle to make it a slot.
+
+![](../images/week04/fusion14.jpg)
+
+Since I make constraint for the first slot, so other slots duplicated from that will also constraint. To check that, I go to *Change parameters* and change the slot height as 9mm. When I back to the sketch, the slot height of other slot is also changed to 9mm (click on the height, press D - as Measurement, and drag it to see)
+
+![](../images/week04/fusion15.jpg)
+
+11. Now I move on to draw another part (a pillar for the pen holder)
+I **draw a rectangle** with 25mm width and 150mm height
+
+![](../images/week04/fusion16.jpg)
+
+12. On this rectangle, I also need to have slots (5 in total). So the steps will be quite similar as making slots for the circle above.
+I first draw a small rectangle, but this time, I put the name of the parameter I define before to the dimensions instead of the number.
+
+![](../images/week04/fusion17.jpg)
+
+13. Then I do the **Trim** for the small rectangle to make a slot.
+14. To duplicate the slot, I will use the same tip as above, but this time with **Rectangular Pattern**
+
+![](../images/week04/fusion18.jpg)
+
+In the rectangular pattern windown: For the *Object*, I select the 3 sides of the slot. Second, for the *Direction*, I select left side of the big rectangle. Then, I input 5 for the 1st Quantity because I want 5 slots. Then for the Distance, I am not quite sure, so I use the blue arrow appeared on the sketch and move it to the position I find comfortable. For the 2nd *Quantity*, it is the number of rectangles will be duplicated in the horizon direction, I don't need more than 1, so I put it 1.
+
+![](../images/week04/fusion19.jpg)
+
+15. Now I have 5 rectangles on the pillar, just need to trim to make them slots. And finish the design
+
+![](../images/week04/fusion20.jpg)
+
+
+### Export to PDF with Fusion 360
+
+1. To export to PDF, I need to **Extrude** the sketch to 3D. I click on *Finish Sketch*, and select all (both the cirle and the rectangle pillar).
+Then I go to *Create* and choose *Extrude*. Here it will ask to input the thickness of my 3D, so I type 3 because the material I will use to cut is MDF 3mm.
+
+![](../images/week04/fusion21.jpg)
+![](../images/week04/fusion22.jpg)
+
+2. In the *Design* tab, I choose **Drawing > From Design**, and it will pop up a *Create Drawing* window, in which I select the Sheet size as A4
+
+![](../images/week04/fusion23.jpg)
+
+3. In the *Drawing view*, I change the **Orientation** to the **Top** and the **Scale** to **1:1**. Place the mouse to the drawing and OK.
+
+![](../images/week04/fusion24.jpg)
+
+4. To delete the outside frame and the title frame of the drawing, I go to Sheet setting and click on the eyes to make it invisible.
+
+![](../images/week04/fusion25.jpg)
+
+5. Now I will export to PDF and save it.
+
+![](../images/week04/fusion26.jpg)
+
+### Prepare to print with Inkscape
+
+In the Inkscape, I import the pdf file, and set up the **Fill and Sroke** of the objects (Fill: no paint, Stroke paint: Flat color, Stroke styles: 0.02 mm)
+It is not allowed to change the size in Inkscape because it will affect to the kerf and other dimensions.
+Then, I will save it again in PDF. 
+
+![](../images/week04/fusion27.jpg)
+
+### Set up with laser cutter
+
+1. I open the newly saved PDF and press Ctrl P. In the Epilog Properties, *Advanced* tab, I select the parameter for the materials *3mm_MDF_cut*
+
+![](../images/week04/fusion28.jpg)
+
+![](../images/week04/fusion29.jpg)
+
+and press OK to send the job to the laser cutter
+
+2. Back to the laser cutter, I adjust the Jog, Focus, and Job.
+It was so satisfied to see my design is coming true.
+
+![](../images/week04/fusion30.jpg)
+
+After that, I test the joints connection and see they fix quite well. So I decide to make more by copying the images in Inkscape, and do again with the Fill and Strokes...
+
+![](../images/week04/fusion31.jpg)
+![](../images/week04/fusion32.jpg)
+
+Additionally, I would need to have another circle as a base (without being empty inside), so I back to my sketch in Fusion 360, select the smaller circle and extrude it. Then I export it to PDF, adjust the Fill and Stroke in Inkscape, Save in PDF, and send to laser cutter to print.
+
+![](../images/week04/fusion33.jpg)
+![](../images/week04/fusion34.jpg)
+
+### Assemble the construction kit
+
+Now I have all objects I need and it is time for assemblingggg
+
+![](../images/week04/fusion35.jpg)
+![](../images/week04/fusion36.jpg)
+![](../images/week04/fusion37.jpg)
+
+It can hold the pens or "assemble other ways" to connect with other press-fit construction kits
+
+![](../images/week04/fusion38.jpg)
 
 
 
