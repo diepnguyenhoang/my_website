@@ -157,45 +157,41 @@ The picture from our instructor (Ms. Behnaz) is a good demonstration to understa
 
 ### Power - Speed - Frequency - DPI
 
-For checking out the effect of Power, Speed, Frequency, DPI on the cutting/engraving quality, we used MDF 3mm and Acrylic 3mm to demonstrate this.
+For checking out the effect of **Power, Speed, Frequency, DPI** on the cutting/engraving quality, we used MDF 3mm and Acrylic 3mm to demonstrate this.
 
-	With the MDF 3mm: 
+*With the MDF 3mm:* 
 
-	- Firstly, we keep the Frequency constant, and adjust the Power and Speed.
+- Firstly, we keep the Frequency constant, and adjust the Power and Speed.
+| Power | Speed | Freg 	| Observation |
+|:-----:|:-----:|:-----:|:-----------|
+|100	|15 	|20		|Cut thru |
+|100	|`5`	|20		|Cut thru but very slow|
+|100	|`40`	|20		|Not cut thru due to fast speed|
+|`50`	|15 	|20 	|Not cut thru due to too low evergy|
+|`80`	|15		|20		|Cut thru|
 
-		| Power | Speed | Freg 	| Observation |
-		|:-----:|:-----:|:-----:|:-----------|
-		|100	|15 	|20		|Cut thru |
-		|100	|`5`	|20		|Cut thru but very slow|
-		|100	|`40`	|20		|Not cut thru due to fast speed|
-		|`50`	|15 	|20 	|Not cut thru due to too low evergy|
-		|`80`	|15		|20		|Cut thru|
+![](../images/week04/powerspeed.jpg) 
 
-	![](../images/week04/powerspeed.jpg) 
+We observed that with slow speed, the machine works well in cutting through the material, while if we set the machine run fast, it hardly to cut. Additionally, with low power(50) MDF 3mm cannot be cut cannot cut but we can make use of this figure to engrave for example. Interestingly, with just 80% power, the square can be cut easily, which is a good consideration for power saving. 
 
-	We observed that with slow speed, the machine works well in cutting through the material, while if we set the machine run fast, it hardly to cut. Additionally, with low power(50) MDF 3mm cannot be cut cannot cut but we can make use of this figure to engrave for example. Interestingly, with just 80% power, the square can be cut easily, which is a good consideration for power saving. 
+- Next, we adjusted the frequency and keep the power (100) and speed (15) constant to see what would happen. The frequency was changed from 20, 5, 40, 60, 80 but there were not so many differences we could observe, because all were well-cut.
 
-	- Next, we adjusted the frequency and keep the power (100) and speed (15) constant to see what would happen. The frequency was changed from 20, 5, 40, 60, 80 but there were not so many differences we could observe, because all were well-cut.
+![](../images/week04/frequency.jpg) 
 
-	![](../images/week04/frequency.jpg) 
+- To check the engraving quality, we kept the Speed (50) and DPI (300) unchanged while adjusted the Power (from 20, 50, and 100). 
+It is also important to note that the color of all 3 pictures should be the same or else it will not describe correctly the effect.
+It can be clearly seen that with less power, the engraved parts are lighter than those of strong power.
 
-	- To check the engraving quality, we kept the Speed (50) and DPI (300) unchanged while adjusted the Power (from 20, 50, and 100). 
-	It is also important to note that the color of all 3 pictures should be the same or else it will not describe correctly the effect.
-	It can be clearly seen that with less power, the engraved parts are lighter than those of strong power.
+![](../images/week04/dpi.jpg) 
 
-	![](../images/week04/dpi.jpg) 
+*With the Acrylic 3mm:* we changed the default value since the material is different compared to the MDF 3mm. However the result is quite similar to what demonstrated with MDF 3mm
 
-	With the Acrylic 3mm: we changed the default value since the material is different compared to the MDF 3mm. However the result is quite similar to what demonstrated with MDF 3mm
+![](../images/week04/acrylic.jpg)
 
-	![](../images/week04/acrylic.jpg)
-
-For checking the Focus, we set up the rastering as in focused, 2mm above the focused, 2mm below the focused, 4mm above the focused, and 4mm below the focused. 
+For checking the **Focus**, we set up the rastering as in focused, 2mm above the focused, 2mm below the focused, 4mm above the focused, and 4mm below the focused. 
 The result has shown that it was a big different between the below/above focus and the in-focused (as we can see the engraved color in the in-focused is much darker). However, among those below and above focus, the engraving color look quite similar.
 
 ![](../images/week04/focus.jpg) 
-
-#### 
-
 
 
 

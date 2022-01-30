@@ -162,6 +162,7 @@ For checking out the effect of **Power, Speed, Frequency, DPI** on the cutting/e
 *With the MDF 3mm:* 
 
 - Firstly, we keep the Frequency constant, and adjust the Power and Speed.
+
 | Power | Speed | Freg 	| Observation |
 |:-----:|:-----:|:-----:|:-----------|
 |100	|15 	|20		|Cut thru |
