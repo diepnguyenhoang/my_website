@@ -11,8 +11,6 @@ This week I worked on the processes involved in using vinyl cutter and laser cut
 
 ## Vinyl cutting
 
-
-
 ### Preparing the design
 I chose to use Inkscape for design preparation
 
@@ -140,6 +138,7 @@ The picture from our instructor (Ms. Behnaz) is a good demonstration to understa
 ![](../images/week04/kerf02.jpg) 
 - After cutting: Interestingly, both the MDF and the Acrylic demonstrated clearly the kerf. 
 	- With MDF material: 
+	
 		□ The designed size for the big rectangle we wanted to cut is 100 mm, but the real size is 100.03 mm.
 		
 		![](../images/week04/kerf03.jpg)
@@ -209,12 +208,15 @@ It will have 4 pillars (in rectangle-shape) to hold 4 disks (in circular-shape) 
 
 1. I click on **Create sketch** and choose a surface I want to draw. It was a TOP
 2. In the *Create*, I choose a circle shape. It will then appear a small window of *Sketch palette* on the right hand, and I choose **Center diameter circle** to draw a circle from the central point.
+	
 	![](../images/week04/fusion1.jpg)
 
 3. I input the diameter of the circle as **100mm**, and draw a smaller circle inside with 70mm in diameter.
+	
 	![](../images/week04/fusion2.jpg)
 
 4. Then I draw another smaller circle inside with **70mm** in diameter.
+	
 	![](../images/week04/fusion3.jpg)
 
 5. In the *Create*, I choose to draw **Rectangle** (2-point rectangle) inside the big circle. This will be made as a joint in a press-fit construction later. I temporarily set the height as 8mm and width as 3mm.
@@ -304,7 +306,7 @@ Then I go to *Create* and choose *Extrude*. Here it will ask to input the thickn
 
 5. Now I will export to PDF and save it.
 
-	![](../images/week04/Fusion26.jpg)
+	![](../images/week04/fusion26.jpg)
 
 ### Prepare to print with Inkscape
 
@@ -349,3 +351,4 @@ It can hold the pens or "assemble other ways" to connect with other press-fit co
 
 
 
+### Original Designed files
