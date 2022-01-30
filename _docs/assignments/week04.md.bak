@@ -166,10 +166,10 @@ With the MDF 3mm:
 | Power | Speed | Freg 	| Observation |
 |:-----:|:-----:|:-----:|:-----------|
 |100	|15 	|20		|Cut thru |
-|100	|5		|20		|Cut thru but very slow|
-|100	|40		|20		|Not cut thru due to fast speed|
-|50		|15 	|20 	|Not cut thru due to too low evergy|
-|80		|15		|20		|Cut thru|
+|100	|`5`	|20		|Cut thru but very slow|
+|100	|`40`	|20		|Not cut thru due to fast speed|
+|`50`	|15 	|20 	|Not cut thru due to too low evergy|
+|`80`	|15		|20		|Cut thru|
 
 ![](../images/week04/powerspeed.jpg) 
 
