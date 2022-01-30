@@ -166,10 +166,10 @@ With the MDF 3mm:
 | Power | Speed | Freg 	| Observation |
 |:-----:|:-----:|:-----:|:-----------|
 |100	|15 	|20		|Cut thru |
-|100	|5		|20		|Cut thru but very slow|
-|100	|40		|20		|Not cut thru due to fast speed|
-|50		|15 	|20 	|Not cut thru due to too low evergy|
-|80		|15		|20		|Cut thru|
+|100	|`5`	|20		|Cut thru but very slow|
+|100	|`40`	|20		|Not cut thru due to fast speed|
+|`50`	|15 	|20 	|Not cut thru due to too low evergy|
+|`80`	|15		|20		|Cut thru|
 
 ![](../images/week04/powerspeed.jpg) 
 
@@ -353,4 +353,4 @@ It can hold the pens or "assemble other ways" to connect with other press-fit co
 
 ### Original Designed files
 
-[download my image](https://github.com/diepnguyenhoang/my_website/raw/master/_docs/images/snowflake1.xcf)
+[download my image](../images/week04/fusion35.jpg)
