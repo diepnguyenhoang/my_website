@@ -211,7 +211,6 @@ It will have 4 rectangles (as pillars) to hold 4 circles with empty inside and 1
 2. In the *Create*, I choose a circle shape. It will then appear a small window of *Sketch palette* on the right hand, and I choose **Center diameter circle** to draw a circle from the central point.
 
 ![](../images/week04/fusion1.jpg)
-
 3. I input the diameter of the circle as **100mmm**, and draw a smaller circle inside with 70mm in diameter.
 
 ![](../images/week04/fusion2.jpg)
