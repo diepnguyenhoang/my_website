@@ -68,7 +68,10 @@ I have designed a snowflake using GIMP following <https://www.youtube.com/watch?
 
 ## 3D Design
 
-
 ### Fusion 360
 
 To be added
+
+## Origin files
+
+[2D Sknowflake design](../assets/snowflake1.svg)

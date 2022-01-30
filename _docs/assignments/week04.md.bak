@@ -353,4 +353,4 @@ It can hold the pens or "assemble other ways" to connect with other press-fit co
 
 ### Original Designed files
 
-[download my image](../images/week04/fusion35.jpg)
+[3D Pressfit design](../assets/Pressfit Construction.f3d)
