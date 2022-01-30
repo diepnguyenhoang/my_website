@@ -177,7 +177,7 @@ With the MDF 3mm:
 We observed that with slow speed, the machine works well in cutting through the material, while if we set the machine run fast, it hardly to cut. Additionally, with low power(50) MDF 3mm cannot be cut cannot cut but we can make use of this figure to engrave for example. Interestingly, with just 80% power, the square can be cut easily, which is a good consideration for power saving. 
 
 - Next, we adjusted the frequency and keep the power (100) and speed (15) constant to see what would happen.
-The frequency was change from 20, 5, 40, 60, 80 but there were not so many differnces we could observe,because all were well-cut
+The frequency was changed from 20, 5, 40, 60, 80 but there were not so many differences we could observe, because all were well-cut.
 
 ![](../images/week04/frequency.jpg) 
 
@@ -212,7 +212,7 @@ It will have 4 rectangles (as pillars) to hold 4 circles with empty inside and 1
 
 ![](../images/week04/fusion1.jpg)
 
-3. I input the diameter of the circle as **100mmm**, and draw a smaller circle inside with 70mm in diameter.
+3. I input the diameter of the circle as **100mm**, and draw a smaller circle inside with 70mm in diameter.
 
 ![](../images/week04/fusion2.jpg)
 
