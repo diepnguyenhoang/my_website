@@ -353,4 +353,4 @@ It can hold the pens or "assemble other ways" to connect with other press-fit co
 
 ### Original Designed files
 
-[snowflake] (https://github.com/diepnguyenhoang/my_website/blob/5dcd38d329f0499e68ba575f7802b7a7bc592fbb/_docs/images/snowflake1.xcf)
+[download my image](../images/week04/snowflake1.xcf)
