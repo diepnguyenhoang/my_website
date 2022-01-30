@@ -232,56 +232,54 @@ It will have 4 pillars (in rectangle-shape) to hold 4 disks (in circular-shape) 
 7. After clicking OK to set the parameters, I go back to the sketch and change the name of the dimensions. By double click on the dimensions, for example the 8mm of the slot, I will type slot_height.
 I do the same for the other dimensions (big_cirle, small_circle, slot_width)
 
-![](../images/week04/fusion8.jpg)
+	![](../images/week04/fusion8.jpg)
 
 8. Next, to make a slot, I need to **Trimm** or remove (click on the scissor shape) the unnecessary parts of the rectangle.
 
-![](../images/week04/fusion9.jpg)
-![](../images/week04/fusion10.jpg)
+	![](../images/week04/fusion9.jpg)
+	![](../images/week04/fusion10.jpg)
 
 9. I need to make the slot height constrainted to make sure they will always fix and position. So in the tab **Constraint**, I choose the icon of equal (=), and click the 2 sides of the slot.
 
-![](../images/week04/fusion11.jpg)
+	![](../images/week04/fusion11.jpg)	
 
 10. Now I have 2 circles and a slot with constraint. It is nearly similar to my sketch, except I need 3 more slots. 
 So here the instructor advices me to use a tool called **Circular Pattern** in the *Create* tab. This function will allow us to duplicate the sketch in an arc or circular pattern
 
-![](../images/week04/fusion12.jpg)
+	![](../images/week04/fusion12.jpg)
 
-As a *Circular pattern* window pops up, I do step by step as the guideline. First, for the *Object*, I select the 3 sides of the slot. Second, for the *Center Point*, I select the big circle. Then, I select Full for the *Angular Spacing* because I want the slots go around the circle. Finally, I choose 4 for the *Quantity*
+	As a *Circular pattern* window pops up, I do step by step as the guideline. First, for the *Object*, I select the 3 sides of the slot. Second, for the *Center Point*, I select the big circle. Then, I select Full for the *Angular Spacing* because I want the slots go around the circle. Finally, I choose 4 for the *Quantity*
 
-![](../images/week04/fusion13.jpg)
+	![](../images/week04/fusion13.jpg)
 
-Now I have 4 slots on the big circle. But at the 3 new slots we need to trim the unwanted parts on the cirle to make it a slot.
+	Now I have 4 slots on the big circle. But at the 3 new slots we need to trim the unwanted parts on the cirle to make it a slot.
 
-![](../images/week04/fusion14.jpg)
+	![](../images/week04/fusion14.jpg)
 
-Since I make constraint for the first slot, so other slots duplicated from that will also constraint. To check that, I go to *Change parameters* and change the slot height as 9mm. When I back to the sketch, the slot height of other slot is also changed to 9mm (click on the height, press D - as Measurement, and drag it to see)
+	Since I make constraint for the first slot, so other slots duplicated from that will also constraint. To check that, I go to *Change parameters* and change the slot height as 9mm. When I back to the sketch, the slot height of other slot is also changed to 9mm (click on the height, press D - as Measurement, and drag it to see)
 
-![](../images/week04/fusion15.jpg)
+	![](../images/week04/fusion15.jpg)
 
-11. Now I move on to draw another part (a pillar for the pen holder)
-I **draw a rectangle** with 25mm width and 150mm height
+11. Now I move on to draw another part (a pillar for the pen holder). I **draw a rectangle** with 25mm width and 150mm height
 
-![](../images/week04/fusion16.jpg)
+	![](../images/week04/fusion16.jpg)
 
-12. On this rectangle, I also need to have slots (5 in total). So the steps will be quite similar as making slots for the circle above.
-I first draw a small rectangle, but this time, I put the name of the parameter I define before to the dimensions instead of the number.
+12. On this rectangle, I also need to have slots (5 in total). So the steps will be quite similar as making slots for the circle above. I first draw a small rectangle, but this time, I put the name of the parameter I define before to the dimensions instead of the number.
 
-![](../images/week04/fusion17.jpg)
+	![](../images/week04/fusion17.jpg)
 
 13. Then I do the **Trim** for the small rectangle to make a slot.
 14. To duplicate the slot, I will use the same tip as above, but this time with **Rectangular Pattern**
 
-![](../images/week04/fusion18.jpg)
+	![](../images/week04/fusion18.jpg)
 
-In the rectangular pattern windown: For the *Object*, I select the 3 sides of the slot. Second, for the *Direction*, I select left side of the big rectangle. Then, I input 5 for the 1st Quantity because I want 5 slots. Then for the Distance, I am not quite sure, so I use the blue arrow appeared on the sketch and move it to the position I find comfortable. For the 2nd *Quantity*, it is the number of rectangles will be duplicated in the horizon direction, I don't need more than 1, so I put it 1.
+	In the rectangular pattern windown: For the *Object*, I select the 3 sides of the slot. Second, for the *Direction*, I select left side of the big rectangle. Then, I input 5 for the 1st Quantity because I want 5 slots. Then for the Distance, I am not quite sure, so I use the blue arrow appeared on the sketch and move it to the position I find comfortable. For the 2nd *Quantity*, it is the number of rectangles will be duplicated in the horizon direction, I don't need more than 1, so I put it 1.
 
-![](../images/week04/fusion19.jpg)
+	![](../images/week04/fusion19.jpg)
 
 15. Now I have 5 rectangles on the pillar, just need to trim to make them slots. And finish the design
 
-![](../images/week04/fusion20.jpg)
+	![](../images/week04/fusion20.jpg)
 
 
 ### Export to PDF with Fusion 360
@@ -289,24 +287,24 @@ In the rectangular pattern windown: For the *Object*, I select the 3 sides of th
 1. To export to PDF, I need to **Extrude** the sketch to 3D. I click on *Finish Sketch*, and select all (both the cirle and the rectangle pillar).
 Then I go to *Create* and choose *Extrude*. Here it will ask to input the thickness of my 3D, so I type 3 because the material I will use to cut is MDF 3mm.
 
-![](../images/week04/fusion21.jpg)
-![](../images/week04/fusion22.jpg)
+	![](../images/week04/fusion21.jpg)
+	![](../images/week04/fusion22.jpg)
 
 2. In the *Design* tab, I choose **Drawing > From Design**, and it will pop up a *Create Drawing* window, in which I select the Sheet size as A4
 
-![](../images/week04/fusion23.jpg)
+	![](../images/week04/fusion23.jpg)
 
 3. In the *Drawing view*, I change the **Orientation** to the **Top** and the **Scale** to **1:1**. Place the mouse to the drawing and OK.
 
-![](../images/week04/fusion24.jpg)
+	![](../images/week04/fusion24.jpg)
 
 4. To delete the outside frame and the title frame of the drawing, I go to Sheet setting and click on the eyes to make it invisible.
 
-![](../images/week04/fusion25.jpg)
+	![](../images/week04/fusion25.jpg)
 
 5. Now I will export to PDF and save it.
 
-![](../images/week04/fusion26.jpg)
+	![](../images/week04/Fusion26.jpg)
 
 ### Prepare to print with Inkscape
 
@@ -318,28 +316,24 @@ Then, I will save it again in PDF.
 
 ### Set up with laser cutter
 
-1. I open the newly saved PDF and press Ctrl P. In the Epilog Properties, *Advanced* tab, I select the parameter for the materials *3mm_MDF_cut*
+1. I open the newly saved PDF and press Ctrl P. In the Epilog Properties, *Advanced* tab, I select the parameter for the materials *3mm_MDF_cut* and press OK to send the job to the laser cutter
 
-![](../images/week04/fusion28.jpg)
+	![](../images/week04/fusion28.jpg)
+	![](../images/week04/fusion29.jpg)
 
-![](../images/week04/fusion29.jpg)
+2. Back to the laser cutter, I adjust the Jog, Focus, and Job. It was so satisfied to see my design is coming true.
 
-and press OK to send the job to the laser cutter
+	![](../images/week04/fusion30.jpg)
 
-2. Back to the laser cutter, I adjust the Jog, Focus, and Job.
-It was so satisfied to see my design is coming true.
+	After that, I test the joints connection and see they fix quite well. So I decide to make more by copying the images in Inkscape, and do again with the Fill and Strokes...
 
-![](../images/week04/fusion30.jpg)
+	![](../images/week04/fusion31.jpg)
+	![](../images/week04/fusion32.jpg)
 
-After that, I test the joints connection and see they fix quite well. So I decide to make more by copying the images in Inkscape, and do again with the Fill and Strokes...
+	Additionally, I would need to have another circle as a base (without being empty inside), so I back to my sketch in Fusion 360, select the smaller circle and extrude it. Then I export it to PDF, adjust the Fill and Stroke in Inkscape, Save in PDF, and send to laser cutter to print.
 
-![](../images/week04/fusion31.jpg)
-![](../images/week04/fusion32.jpg)
-
-Additionally, I would need to have another circle as a base (without being empty inside), so I back to my sketch in Fusion 360, select the smaller circle and extrude it. Then I export it to PDF, adjust the Fill and Stroke in Inkscape, Save in PDF, and send to laser cutter to print.
-
-![](../images/week04/fusion33.jpg)
-![](../images/week04/fusion34.jpg)
+	![](../images/week04/fusion33.jpg)
+	![](../images/week04/fusion34.jpg)
 
 ### Assemble the construction kit
 

@@ -248,25 +248,23 @@ So here the instructor advices me to use a tool called **Circular Pattern** in t
 
 	![](../images/week04/fusion12.jpg)
 
-As a *Circular pattern* window pops up, I do step by step as the guideline. First, for the *Object*, I select the 3 sides of the slot. Second, for the *Center Point*, I select the big circle. Then, I select Full for the *Angular Spacing* because I want the slots go around the circle. Finally, I choose 4 for the *Quantity*
+	As a *Circular pattern* window pops up, I do step by step as the guideline. First, for the *Object*, I select the 3 sides of the slot. Second, for the *Center Point*, I select the big circle. Then, I select Full for the *Angular Spacing* because I want the slots go around the circle. Finally, I choose 4 for the *Quantity*
 
 	![](../images/week04/fusion13.jpg)
 
-Now I have 4 slots on the big circle. But at the 3 new slots we need to trim the unwanted parts on the cirle to make it a slot.
+	Now I have 4 slots on the big circle. But at the 3 new slots we need to trim the unwanted parts on the cirle to make it a slot.
 
 	![](../images/week04/fusion14.jpg)
 
-Since I make constraint for the first slot, so other slots duplicated from that will also constraint. To check that, I go to *Change parameters* and change the slot height as 9mm. When I back to the sketch, the slot height of other slot is also changed to 9mm (click on the height, press D - as Measurement, and drag it to see)
+	Since I make constraint for the first slot, so other slots duplicated from that will also constraint. To check that, I go to *Change parameters* and change the slot height as 9mm. When I back to the sketch, the slot height of other slot is also changed to 9mm (click on the height, press D - as Measurement, and drag it to see)
 
 	![](../images/week04/fusion15.jpg)
 
-11. Now I move on to draw another part (a pillar for the pen holder)
-I **draw a rectangle** with 25mm width and 150mm height
+11. Now I move on to draw another part (a pillar for the pen holder). I **draw a rectangle** with 25mm width and 150mm height
 
 	![](../images/week04/fusion16.jpg)
 
-12. On this rectangle, I also need to have slots (5 in total). So the steps will be quite similar as making slots for the circle above.
-I first draw a small rectangle, but this time, I put the name of the parameter I define before to the dimensions instead of the number.
+12. On this rectangle, I also need to have slots (5 in total). So the steps will be quite similar as making slots for the circle above. I first draw a small rectangle, but this time, I put the name of the parameter I define before to the dimensions instead of the number.
 
 	![](../images/week04/fusion17.jpg)
 
@@ -275,7 +273,7 @@ I first draw a small rectangle, but this time, I put the name of the parameter I
 
 	![](../images/week04/fusion18.jpg)
 
-In the rectangular pattern windown: For the *Object*, I select the 3 sides of the slot. Second, for the *Direction*, I select left side of the big rectangle. Then, I input 5 for the 1st Quantity because I want 5 slots. Then for the Distance, I am not quite sure, so I use the blue arrow appeared on the sketch and move it to the position I find comfortable. For the 2nd *Quantity*, it is the number of rectangles will be duplicated in the horizon direction, I don't need more than 1, so I put it 1.
+	In the rectangular pattern windown: For the *Object*, I select the 3 sides of the slot. Second, for the *Direction*, I select left side of the big rectangle. Then, I input 5 for the 1st Quantity because I want 5 slots. Then for the Distance, I am not quite sure, so I use the blue arrow appeared on the sketch and move it to the position I find comfortable. For the 2nd *Quantity*, it is the number of rectangles will be duplicated in the horizon direction, I don't need more than 1, so I put it 1.
 
 	![](../images/week04/fusion19.jpg)
 
@@ -306,7 +304,7 @@ Then I go to *Create* and choose *Extrude*. Here it will ask to input the thickn
 
 5. Now I will export to PDF and save it.
 
-	![](../images/week04/fusion26.jpg)
+	![](../images/week04/Fusion26.jpg)
 
 ### Prepare to print with Inkscape
 
@@ -314,7 +312,7 @@ In the Inkscape, I import the pdf file, and set up the **Fill and Sroke** of the
 It is not allowed to change the size in Inkscape because it will affect to the kerf and other dimensions.
 Then, I will save it again in PDF. 
 
-	![](../images/week04/fusion27.jpg)
+![](../images/week04/fusion27.jpg)
 
 ### Set up with laser cutter
 
@@ -323,17 +321,16 @@ Then, I will save it again in PDF.
 	![](../images/week04/fusion28.jpg)
 	![](../images/week04/fusion29.jpg)
 
-2. Back to the laser cutter, I adjust the Jog, Focus, and Job.
-It was so satisfied to see my design is coming true.
+2. Back to the laser cutter, I adjust the Jog, Focus, and Job. It was so satisfied to see my design is coming true.
 
 	![](../images/week04/fusion30.jpg)
 
-After that, I test the joints connection and see they fix quite well. So I decide to make more by copying the images in Inkscape, and do again with the Fill and Strokes...
+	After that, I test the joints connection and see they fix quite well. So I decide to make more by copying the images in Inkscape, and do again with the Fill and Strokes...
 
 	![](../images/week04/fusion31.jpg)
 	![](../images/week04/fusion32.jpg)
 
-Additionally, I would need to have another circle as a base (without being empty inside), so I back to my sketch in Fusion 360, select the smaller circle and extrude it. Then I export it to PDF, adjust the Fill and Stroke in Inkscape, Save in PDF, and send to laser cutter to print.
+	Additionally, I would need to have another circle as a base (without being empty inside), so I back to my sketch in Fusion 360, select the smaller circle and extrude it. Then I export it to PDF, adjust the Fill and Stroke in Inkscape, Save in PDF, and send to laser cutter to print.
 
 	![](../images/week04/fusion33.jpg)
 	![](../images/week04/fusion34.jpg)
@@ -342,13 +339,14 @@ Additionally, I would need to have another circle as a base (without being empty
 
 Now I have all objects I need and it is time for assemblingggg
 
-	![](../images/week04/fusion35.jpg)
-	![](../images/week04/fusion36.jpg)
-	![](../images/week04/fusion37.jpg)
+![](../images/week04/fusion35.jpg)
+![](../images/week04/fusion36.jpg)
+![](../images/week04/fusion37.jpg)
 
 It can hold the pens or "assemble other ways" to connect with other press-fit construction kits
 
-	![](../images/week04/fusion38.jpg)
+![](../images/week04/fusion38.jpg)
 
 
 
+### Original Designed files
