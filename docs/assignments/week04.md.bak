@@ -52,7 +52,7 @@ At the University of Oulu, we use  Roland CAMM-1 GS24 vinyl cutter.
 
 ![](../images/week04/vinyl08.jpg)
 
-- For setting the vinyl cutter for my image, I chose *edge* 
+- For setting the vinyl cutter for my image, I chose **Edge** 
 - Then I loaded the sheet under the rollers
 - Back to the computer, I opened my image in Inskcape, and moved my image to CutStudio by choosing *Extention* tab > Roland CutStudio > Open in CutStudio.
 
@@ -201,7 +201,7 @@ Anyway, with the support of my instructors and peers, I did it and can finally c
 ### Sketch a design
 
 I firstly drew on paper what I wanted to make, and it is a pen holder. 
-It will have 4 rectangles (as pillars) to hold 4 circles with empty inside and 1 circle as a base.
+It will have 4 pillars (in rectangle-shape) to hold 4 disks (in circular-shape) with inside empty and 1 disk as a base.
 
 ![](../images/week04/sketch.jpg) 
 
@@ -209,7 +209,6 @@ It will have 4 rectangles (as pillars) to hold 4 circles with empty inside and 1
 
 1. I click on **Create sketch** and choose a surface I want to draw. It was a TOP
 2. In the *Create*, I choose a circle shape. It will then appear a small window of *Sketch palette* on the right hand, and I choose **Center diameter circle** to draw a circle from the central point.
-
 ![](../images/week04/fusion1.jpg)
 
 3. I input the diameter of the circle as **100mm**, and draw a smaller circle inside with 70mm in diameter.
