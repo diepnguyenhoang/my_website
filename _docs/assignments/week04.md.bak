@@ -60,7 +60,7 @@ At the University of Oulu, we use  Roland CAMM-1 GS24 vinyl cutter.
 
 ![](../images/week04/vinyl10.jpg)
 
-- Back to the Operation Panel, I pressed Enter to start cutting.
+- Back to the Operation Panel, I pressed Enter to start cutting. Actually, we can choose to print/cut directly from the Inkscape, but as my experience, the CutStudio makes it more convenient.
 
 ![](../images/week04/vinyl11.jpg)
 
@@ -95,11 +95,14 @@ For understanding the nature and features of the laser cutter, as a group of fou
 
 - Turn on: there are 3 steps to turn on the machine
 
-- Star cutting: assume that we have a design and already send to the machine, then we need adjust 3 things on the Joystick Control
+- Start cutting: assume that we have a design and already send to the machine, then we need adjust 3 things on the Joystick Control
 
-		○ JOG: (or the Origin)  is where we set up the place/point where the machine begin to laser. By looking at the Red dot pointer and using the joystick to move it to the desired position
+		○ JOG: (or the Origin) is where we set up the place/point where the machine begins to laser. 
+		By looking at the Red dot pointer and using the joystick to move it to the desired position
 		
-		○ FOCUS: is where we decide the distance between the laser and the material we neet to cut. Normally, we have a special focusing tool (triangle shape) to support the adjustment. By installing the tool to the 2 knobs of the laser, and moving (up or down) the joystick until the tool touches the material, take out the tool after setting.
+		○ FOCUS: is where we decide the distance between the laser and the material we neet to cut. 
+		Normally, we have a special focusing tool (triangle shape) to support the adjustment. 
+		By installing the tool to the 2 knobs of the laser, and moving (up or down) the joystick until the tool touches the material, take out the tool after setting.
 		
 		○ JOB: is where we choose the file we need to implement 
 
@@ -108,6 +111,8 @@ For understanding the nature and features of the laser cutter, as a group of fou
 - After the 3 setting, the screen will display the amount of time spending for the job.
 
 - Click GO to start cutting/engraving
+
+![](../images/week04/vinyl15.jpg)
 	
 ### Important safety instructions: 
 
@@ -115,14 +120,15 @@ For understanding the nature and features of the laser cutter, as a group of fou
 ```
 Since the laser cutter is the most dangerous machine in any Fablab, so we should:
 ○ NEVER Turn our back to the machine when it is cutting
-○ Wait at least 1 minute after the machine finishes the cutting, and open the lid. Because the combution of some cutting materials may catch fire when exposing with air, so we need to wait for the exhaust pull away the gases
+○ Wait at least 1 minute after the machine finishes the cutting, and open the lid. 
+Because the combution of some cutting materials may catch fire when exposing with air, so we need to wait for the exhaust pull away the gases
 ○ In case there is fire, (1) cover the place with the 'fire blanket' (near the sink in the Fablab), (2) bring the material out of the machine, (3) use the fire extinguisher.
 ```
 
 ### Kerf
 
 #### What is kerf: 
-It is the width of material which is burned away. That mean the size of what we design to cut and of what we cut in reality will slightly mismatch. This happens because of many factors such as the laser beam has its own size, the nature of the materials, the environments, the settings, the process… It is important to take into consideration the kerf when designing, especially in parametric design.
+It is the width of material which is burned away. That means the size of what we design to cut and of what we cut in reality will slightly mismatch. This happens because of many factors such as the laser beam has its own size, the nature of the materials, the environments, the settings, the process… It is important to take into consideration the kerf when designing, especially in parametric design.
 The picture from our instructor (Ms. Behnaz) is a good demonstration to understand.
 
 ![](../images/week04/kerf.jpg)
@@ -162,6 +168,7 @@ For checking out the effect of **Power, Speed, Frequency, DPI** on the cutting/e
 *With the MDF 3mm:* 
 
 - Firstly, we keep the Frequency constant, and adjust the Power and Speed.
+
 | Power | Speed | Freg 	| Observation |
 |:-----:|:-----:|:-----:|:-----------|
 |100	|15 	|20		|Cut thru |
@@ -172,7 +179,7 @@ For checking out the effect of **Power, Speed, Frequency, DPI** on the cutting/e
 
 ![](../images/week04/powerspeed.jpg) 
 
-We observed that with slow speed, the machine works well in cutting through the material, while if we set the machine run fast, it hardly to cut. Additionally, with low power(50) MDF 3mm cannot be cut cannot cut but we can make use of this figure to engrave for example. Interestingly, with just 80% power, the square can be cut easily, which is a good consideration for power saving. 
+We observed that with slow speed, the machine works well in cutting through the material, while being set to run in fast speed, the MDF is hardly to cut. Additionally, with low power (50) MDF 3mm cannot be cut but we can make use of this figure to engrave, for example. Interestingly, with just 80% power, the square can be cut easily, which is a good consideration for power saving. 
 
 - Next, we adjusted the frequency and keep the power (100) and speed (15) constant to see what would happen. The frequency was changed from 20, 5, 40, 60, 80 but there were not so many differences we could observe, because all were well-cut.
 
@@ -215,7 +222,7 @@ It will have 4 pillars (in rectangle-shape) to hold 4 disks (in circular-shape) 
 	
 	![](../images/week04/fusion1.jpg)
 
-3. I input the diameter of the circle as **100mm**, and draw a smaller circle inside with 70mm in diameter.
+3. I input the diameter of the circle as **100mm**.
 	
 	![](../images/week04/fusion2.jpg)
 
@@ -224,6 +231,7 @@ It will have 4 pillars (in rectangle-shape) to hold 4 disks (in circular-shape) 
 	![](../images/week04/fusion3.jpg)
 
 5. In the *Create*, I choose to draw **Rectangle** (2-point rectangle) inside the big circle. This will be made as a joint in a press-fit construction later. I temporarily set the height as 8mm and width as 3mm.
+	
 	![](../images/week04/fusion4.jpg)
 
 6. I need to define my own parameter so that it will be more convenient if later I want to change some dimensions which related to each other, they will be changed accordingly.
@@ -240,7 +248,7 @@ I do the same for the other dimensions (big_cirle, small_circle, slot_width)
 
 	![](../images/week04/fusion8.jpg)
 
-8. Next, to make a slot, I need to **Trimm** or remove (click on the scissor shape) the unnecessary parts of the rectangle.
+8. Next, to make a slot, I need to **Trim** or remove (click on the scissor shape) the unnecessary parts of the rectangle.
 
 	![](../images/week04/fusion9.jpg)
 	![](../images/week04/fusion10.jpg)
