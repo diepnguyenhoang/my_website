@@ -112,7 +112,7 @@ For understanding the nature and features of the laser cutter, as a group of fou
 
 - Click GO to start cutting/engraving
 
-![](../images/week04/vinyl15.jpg)
+![](../images/week04/lasercutter.jpg)
 	
 ### Important safety instructions: 
 

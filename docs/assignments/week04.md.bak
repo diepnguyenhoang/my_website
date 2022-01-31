@@ -322,7 +322,7 @@ Then I go to *Create* and choose *Extrude*. Here it will ask to input the thickn
 
 ### Prepare to print with Inkscape
 
-In the Inkscape, I import the pdf file, and set up the **Fill and Sroke** of the objects (Fill: no paint, Stroke paint: Flat color, Stroke styles: 0.02 mm)
+In the Inkscape, I import the pdf file, and set up the **Fill and Sroke** of the objects (Fill: no paint, Stroke paint: Flat color, Stroke styles: 0.02 mm). 
 It is not allowed to change the size in Inkscape because it will affect to the kerf and other dimensions.
 Then, I will save it again in PDF. 
 
@@ -357,7 +357,7 @@ Now I have all objects I need and it is time for assemblingggg
 ![](../images/week04/fusion36.jpg)
 ![](../images/week04/fusion37.jpg)
 
-It can hold the pens or "assemble other ways" to connect with other press-fit construction kits
+It can hold the pens or "assemble other ways" by connecting with other press-fit construction kits
 
 ![](../images/week04/fusion38.jpg)
 
