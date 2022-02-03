@@ -57,7 +57,7 @@ After measuring, it shows the Width as 418mm.
 ![](../images/week04/vinyl008.jpg)
 
 
-- Back to the computer, I opened my image in Inskcape. Here I pressed Ctrl P to print, and chose *Printing Properties > Get from the Machine*, it will show the same number as shownn on the vinyl cutter. This way is useful to get to know the size of the sheet we want to cut.
+- Back to the computer, I opened my image in Inskcape. Here I pressed Ctrl P, and chose *Printing Properties > Get from the Machine*, it will show the same number as shown on the vinyl cutter. This way is useful to get to know the size of the sheet we want to cut.
 Later, back to the main screen of Inkscape, I  moved my image to CutStudio by choosing *Extention* tab > Roland CutStudio > Open in CutStudio.
 
 ![](../images/week04/vinyl09.jpg)
@@ -70,7 +70,7 @@ Later, back to the main screen of Inkscape, I  moved my image to CutStudio by ch
 
 ![](../images/week04/vinyl11.jpg)
 
-- Since the image I chose has so many small details, the machine somehow peeled it while cutting.
+- Since the image I chose has so many small details, and the lines are so close to each others, the machine somehow peeled it while cutting.
 
 ![](../images/week04/vinyl12.jpg)
 
@@ -377,9 +377,9 @@ It can hold the pens or "assemble other ways" by connecting with other press-fit
 
 [2D Pressfit 2](../assets/Pressfit Base.pdf)
 
-[3D Pressfit 1 universal ver] (../assets/Body1_PressfitCircles.stl)
+[3D Pressfit 1 universal ver](../assets/Body1_PressfitCircles.stl)
 
-[3D Pressfit 2 universal ver] (../assets/Body2_PressfitRectangle.stl)
+[3D Pressfit 2 universal ver](../assets/Body2_PressfitRectangle.stl)
 
 [Butterfly vinyl cut](../assets/Vinyl cut_Butterfly.svg)
 
