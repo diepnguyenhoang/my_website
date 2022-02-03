@@ -50,9 +50,15 @@ At the University of Oulu, we use  Roland CAMM-1 GS24 vinyl cutter.
 
 ![](../images/week04/vinyl08.jpg)
 
-- For setting the vinyl cutter for my image, I chose **Edge** 
-- Then I loaded the sheet under the rollers
-- Back to the computer, I opened my image in Inskcape, and moved my image to CutStudio by choosing *Extention* tab > Roland CutStudio > Open in CutStudio.
+- For setting the vinyl cutter for my image, I first loaded the sheet under the rollers 
+- Then I chose **Edge** on the Operation Panel, and press OK. The machine will show "Now loading" which means it will start to measure my sheet.
+After measuring, it shows the Width as 418mm.
+
+![](../images/week04/vinyl008.jpg)
+
+
+- Back to the computer, I opened my image in Inskcape. Here I pressed Ctrl P to print, and chose *Printing Properties > Get from the Machine*, it will show the same number as shownn on the vinyl cutter. This way is useful to get to know the size of the sheet we want to cut.
+Later, back to the main screen of Inkscape, I  moved my image to CutStudio by choosing *Extention* tab > Roland CutStudio > Open in CutStudio.
 
 ![](../images/week04/vinyl09.jpg)
 
@@ -97,7 +103,7 @@ For understanding the nature and features of the laser cutter, as a group of fou
 
 - Start cutting: assume that we have a design and already send to the machine, then we need adjust 3 things on the Joystick Control
 
-		○ JOG: (or the Origin) is where we set up the place/point where the machine begins to laser. 
+		○ JOG: is where we set up the *origin* or the place/point where the machine begins to laser. 
 		By looking at the Red dot pointer and using the joystick to move it to the desired position
 		
 		○ FOCUS: is where we decide the distance between the laser and the material we neet to cut. 
@@ -106,7 +112,7 @@ For understanding the nature and features of the laser cutter, as a group of fou
 		
 		○ JOB: is where we choose the file we need to implement 
 
-- Remember that after each adjustment, we need to press the joystick so that the system can save our setting.
+- Remember that after each adjustment of the JOG and FOCUS, we need to press the joystick so that the system can save our setting. 
 
 - After the 3 setting, the screen will display the amount of time spending for the job.
 
@@ -140,7 +146,7 @@ The picture from our instructor (Ms. Behnaz) is a good demonstration to understa
 
 - The file was saved in pdf format before sending to the laser cutter.
 - The material we used to cut is MDF 3mm and Acryclic 3mm.
-- Then we measured the size of the big one and the small onces after cutting to see the difference. To make it easy to calculate, we also used 2-side taps to help position the material on paper, and made use of the digital calculator.
+- Then we measured the size of the big one and the small onces after cutting to see the difference. To make it easy to calculate, we also used 2-side taps to help position the material on paper, and made use of the digital caliper.
 ![](../images/week04/kerf02.jpg) 
 - After cutting: Interestingly, both the MDF and the Acrylic demonstrated clearly the kerf. 
 	- With MDF material: 
@@ -370,6 +376,10 @@ It can hold the pens or "assemble other ways" by connecting with other press-fit
 [2D Pressfit 1](../assets/Pressfit circle and rectangle.pdf)
 
 [2D Pressfit 2](../assets/Pressfit Base.pdf)
+
+[3D Pressfit 1 universal ver] (../assets/Body1_PressfitCircles.stl)
+
+[3D Pressfit 2 universal ver] (../assets/Body2_PressfitRectangle.stl)
 
 [Butterfly vinyl cut](../assets/Vinyl cut_Butterfly.svg)
 

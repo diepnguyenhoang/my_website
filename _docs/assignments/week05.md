@@ -25,7 +25,7 @@ Therefore I also think of integrating into "my product other functions/mechanism
 ## Dissemination plan
 
 Actually, besides my product could fulfill my personal need, when thinking of the prospective future of it, I believe it also has a potential to go on a business because of its functionalities. 
-Firstly, it can be seen clearly that every biker would need it because it is convenient, helpful and compact ( 4 in 1 : holding flashlight, phone, camera, gopgo). 
+Firstly, it can be seen clearly that every biker would need it because it is convenient, helpful and compact ( 4 in 1 : holding flashlight, phone, camera, Gopro). 
 Secondly, target group is also large, which can range from students with limited budget, food-delivering staff with the need to use phone almost everytime (for searching map, or checking orders…), to vbloggers … 
 Finally, with the market share on wide range of users, companies doing business related to bicycle can consider it as an add-on or accessories.
 
@@ -49,7 +49,7 @@ Apart from that, I would like to have some kind of acknowledgement or credit (su
 >Creative Commons is a tool to help us share our work. 
 >It is also a free and easy-to-use copyright licenses platform, which provide a simple, standardized way to grant the public permission to use our creative work under copyright law.
 
-There are 6 different license types which can be found with more details [**here**]: https://creativecommons.org/about/cclicenses/
+There are 6 different license types which can be found with more details => <https://creativecommons.org/about/cclicenses/>
 
 For my product, I would choose:
 
