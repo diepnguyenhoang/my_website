@@ -67,3 +67,7 @@ I have no intention to make any income with the project.
 Nevertheless, as mentioned above, I think it is possible to get income if the product is well-developed and further designed.
 Once its functionality and design have been finished, selling it separately or as an extra tool with bicycle would bring profit.
 
+## Slide & Video
+
+I have not yet realized the exact product I would like to make, so for this Slide and Video, I will make it as a placeholder.
+
