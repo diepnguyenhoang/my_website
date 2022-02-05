@@ -64,11 +64,83 @@ I have designed a snowflake using GIMP following <https://www.youtube.com/watch?
 
 ![](../images/week02/snow-9.jpg)
 
+### INKSCAPE
+
+I used Inkscape to create my sticker.
+- Firstly, I downloaded a picture from the internet <https://www.wallpaperbetter.com/en/hd-wallpaper-gbnmu>
+- Then I imported it to Inkscape
+
+	![](../images/week03/Ink01.jpg)
+	
+- Because I only want to get the fish next to the mermaid, so I right-clicked to the picture and chose Trace bitmap.
+
+	![](../images/week03/Ink02.jpg)
+	
+- By using this, I could detect the edge in "Single scan" option, and remove background in "Multiple scans" option.
+
+	![](../images/week03/Ink03.jpg)
+	
+- I pressed *Apply* and got the result with black and white characters.
+
+	![](../images/week03/Ink04.jpg)
+
+- I then went to *Path* > *Break apart* to scatter the big pictures to smaller ones. 
+
+	![](../images/week03/Ink05.jpg)
+
+	This will allow me to see all the details of the fish and choose to group the correct ones.
+	
+	![](../images/week03/Ink06.jpg)
+
+- I selected all elements of the fish and clicked *Object* to setup the "Fill and Stroke*
+
+	![](../images/week03/Ink07.jpg)
+	
+- Then I drew a circle around the fish and chose the corresponding Fill and Stroke*
+	
+	![](../images/week03/Ink08.jpg)
+
+- After that, I selected Text to type what I wanted for the sticker, and chose Text > Put on path to connect the text with the circle.
+
+	![](../images/week03/Ink09.jpg)
+	
+- Finally, I selected the desired direction for the text to be in the cirle.
+
+	![](../images/week03/Ink09.jpg)
+
+Overall, I find using Inkscape is a bit more convenient and easier to understand for me, because to this level, I don't have to deal with some kinds of layer (as in GIMP) which sometime confused me.
 
 
 ## 3D Design
 
-
 ### Fusion 360
 
-To be added
+I experienced with Fusion 360 on modeling a base to fit on the handlebar (of a bike) so as to keep the flashlight
+
+1. In Fusion360, I *create sketch* and choose the Top surface. In the Create tab, I choose to draw a rectangle (90x50mm)
+
+	![](../images/week03/Fus01.jpg)
+	
+2. Then I choose *Fit point spline* to create a slot on the retangle's length.
+
+	![](../images/week03/Fus02.jpg)
+	
+3. I use *Trim* to cut the inner side of the slot
+
+	![](../images/week03/Fus03.jpg)
+	
+4. I continue to draw another small circle (18mm in diameter) to the other side of the rectangle, and use *Trim* to remove the inner side
+
+	![](../images/week03/Fus04.jpg)
+	![](../images/week03/Fus05.jpg)
+	
+5. Finally, I finish the sketch and *Extrude* it to 3D.
+
+	![](../images/week03/Fus06.jpg)
+	![](../images/week03/Fus07.jpg)
+
+
+## Origin files
+
+[2D Sknowflake design](../assets/snowflake1.svg)
+[2D Fish design](../assets/fish.svg)
