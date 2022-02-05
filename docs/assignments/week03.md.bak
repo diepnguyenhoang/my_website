@@ -67,7 +67,9 @@ I have designed a snowflake using GIMP following <https://www.youtube.com/watch?
 ### INKSCAPE
 
 I used Inkscape to create my sticker.
+
 - Firstly, I downloaded a picture from the internet <https://www.wallpaperbetter.com/en/hd-wallpaper-gbnmu>
+
 - Then I imported it to Inkscape
 
 	![](../images/week03/Ink01.jpg)
@@ -143,4 +145,7 @@ I experienced with Fusion 360 on modeling a base to fit on the handlebar (of a b
 ## Origin files
 
 [2D Sknowflake design](../assets/snowflake1.svg)
+
 [2D Fish design](../assets/fish.svg)
+
+[3D design](../assets/Base.svg)

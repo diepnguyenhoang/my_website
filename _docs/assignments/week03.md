@@ -67,7 +67,9 @@ I have designed a snowflake using GIMP following <https://www.youtube.com/watch?
 ### INKSCAPE
 
 I used Inkscape to create my sticker.
+
 - Firstly, I downloaded a picture from the internet <https://www.wallpaperbetter.com/en/hd-wallpaper-gbnmu>
+
 - Then I imported it to Inkscape
 
 	![](../images/week03/Ink01.jpg)
@@ -138,6 +140,9 @@ I experienced with Fusion 360 on modeling a base to fit on the handlebar (of a b
 
 	![](../images/week03/Fus06.jpg)
 	![](../images/week03/Fus07.jpg)
+
+To be honest, it was my first time working on Fusion 360, so it was quite a bit confused in selecting different functions/shapes. 
+Also, for me, the hardest part is the ability to imagine different perspectives or surface so as to draw the desired shape (for example, what it will look like from the back, top, or the front)
 
 
 ## Origin files
