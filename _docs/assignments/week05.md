@@ -61,6 +61,11 @@ For my product, I would choose:
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
+### MIT
+
+For licening the software used in the project, I would consider to choose MIT license from <https://opensource.org/>
+The license would include no limitation to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so.
+
 ## Income
 
 I have no intention to make any income with the project. 
@@ -71,6 +76,7 @@ Once its functionality and design have been finished, selling it separately or a
 
 I have not yet realized the exact product I would like to make, so for this Slide and Video, I will make it as a placeholder.
 
-[Slide](../assets/presentation.png)
+[Slide](../images/week05/presentation.png)
 
-[Video](../assets/presentation.mp4)
+[Video](../images/week05/presentation.mp4)
+
