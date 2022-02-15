@@ -76,7 +76,7 @@ Once its functionality and design have been finished, selling it separately or a
 
 I have not yet realized the exact product I would like to make, so for this Slide and Video, I will make it as a placeholder.
 
-[Slide](../images/week05/presentation.png)
+[Slide](../presentation.png)
 
-[Video](../images/week05/presentation.mp4)
+[Video](../presentation.mp4)
 
