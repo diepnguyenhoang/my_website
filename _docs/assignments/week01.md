@@ -42,9 +42,4 @@ Especially talking about the project management principles, in the lecture of MI
 <iframe src="https://player.vimeo.com/video/505368120" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
-### Final Project - Initial idea
-
-Getting inspired by riding a bike around Oulu these days, I come up with an idea to make a tool which will be mounted on the front of the bike to keep various things such as flashlight, phone, camera.
-
-![](../images/initial-idea.jpg)
 
