@@ -41,16 +41,21 @@ To link the style to index.html, we need to write a rule <link rel="stylesheet" 
 
 ## VCS (Version Control System) - Gitlab vs Github
 
-VCS is a software which records changes, permits recall older versions, and enables collaboration. Among VCS softwares, we choose GIT (Gitlab, Github) due to its free, simple, fast, and open platform.
+VCS is a software which records changes, permits recall older versions, and enables collaboration. 
+Among VCS softwares, we choose GIT (https://git-scm.com/) due to its free, simple, fast, and open VCS platform.
+As learnt, there are 3 popular code hosting sites: GitHub, Bitbucket, GitLab. 
+In this course, we focus more on GitHub and GitLab which are both web-based GIT repository hosting service with distributed revision control and social features.
 
 Since the main aim of this week is to **have my own website deployed in class repository (either gitlab or github)**, so we need to do following steps:
 
-1. Have an account in gitlab or github and create a new project. This will be the place we store our website.
+1. **Create an account** in gitlab or github and **create a new project**. This will be the place we host our website.
+In my case, I first chose GitLab to be my GIT repository manager.
 
-2. Setup GIT in my computer (install from <https://git-scm.com/downloads>, and *configure git* with my name and email address)
+
+2. **Setup GIT** in my computer (install GIT from <https://git-scm.com/downloads>, and **configure git** with my name and email address
 ![](../images/git-config.png)
 
-3. Generate SSH keys: we need these keys to authenticate ourselves with the system so that it knows we are the one who owns the project.
+3. **Generate SSH keys**: we need these keys to authenticate ourselves with the system so that it knows we are the one who owns the project.
 
 	- We have 2 types of SSH keys: private key (which will store in our local file), and public key (which everyone can see and get)
 
@@ -58,7 +63,7 @@ Since the main aim of this week is to **have my own website deployed in class re
 
 	![](../images/ssh-key-1.jpg)
 
-	Then it will generate the 2 keys in my local repo.
+	Then it will generate the 2 keys in my ssh configuration folder.
 
 	![](../images/ssh-key-2.jpg)
 
@@ -72,7 +77,7 @@ Since the main aim of this week is to **have my own website deployed in class re
 
 	![](../images/ssh-key-5.jpg)
 
-4. Download the remote repository to our computer (creating a local repository), we need to clone it by using *git clone url*
+4. **Download the remote repository** to our computer (creating a local repository), we need to clone it by using *git clone url*
 
 	To get the URL, we need to go to our project created in gitlab, and copy it to the command
 
@@ -87,30 +92,47 @@ Since the main aim of this week is to **have my own website deployed in class re
 
 	![](../images/git-clone-3.jpg)
 
-5. Update the remote repo: any changes or modification from the local repo need to be updated so as to see in the remote repo. In the GIT CMD
+5. **Update the remote repo**: any changes or modification from the local repo need to be updated so as to see in the remote repo. In the GIT CMD
 
 	```
 	git status => to check the status of the remote repo
-	git add . => to add any changes
-	git commit -m "message" => to commit/confirm our modification
+	
+	git add . => to append one or more files to the commit that is being created
+	
+	git commit -m "message" => to store the commit in local repo
+	
 	git push => to update and move the changes to remote repo
 	```
 
-6. Host/Deploy our website in github
+6. Host/Deploy our website in GitHub
 
-	I have been setting up using gitlab account, however, to facilitate the website deployment, we need to also set up CI/CD Pipelines which will help to automate our software delivery process. Unfortunately, gitlab will ask us to fill in our credit card information in order to use this function. It is a bit inconvenient for me to do so. Therefore, I will use github instead and set up from the beginning, but this time, we will write website using Markdowns (not HTML). 
+	I have been setting up using gitlab account, however, to facilitate the website deployment, we need to also set up CI/CD Pipelines which will help to automate our software delivery process. 
+	Unfortunately, gitlab will ask us to fill in our credit card information in order to use this function. 
+	It is a bit inconvenient for me to do so. 
+	Therefore, I will I will choose GitHub as my code hosting site instead, which mean I have to set up all the things from the beginning (step 1,3&4), and create my website using Markdowns (not HTML). 
 	
-	- Create new project in github
-	- Create new folder (local repository) for the website
-	- Copy the files template downloaded from the gitlab website (see the Markdown session below) to the local repo 
-	- Remove the 2 files which we don’t need for github
+	- Create a new folder in my computer (local repository) for the website, here I named it as *fablabcoursehub*
+	- Setup a new account and create a new repository (namedly *my_website*) in [GitHub](https://github.com/)
+	- Generate SSH Keys in GitHub to authenticate myself with the system: in the *my_website* remote repo, go to Setting (at the top right corner of the web) > choose SSH and GPG Keys > New SSH Key
+		![](../images/added2.jpg)
+		I type the title for the key as *fablabprojectmanagementkey* and copy the SSH key that I created above (3) to share it with GitHub and click SSH Key.
+		![](../images/added3.jpg)
+		![](../images/added4.jpg)
+	- Download the remote repo: in the newly created repository *my_website*, go to *Code* > choose SSH > copy the key > in the command line: type *git clone and paste the key in* 
+		![](../images/added1.jpg)
+		After the successful cloning, in my local repository *fablabcoursehub*, there is a folder named *my_website*
+	- Copy the files of website template downloaded from the gitlab website (see the Markdown session below) to the local repo (folder *my_website*)
+	- Remove the 2 files which we don’t need for GitHub
 	![](../images/github-template.jpg)
 	
 	- Go to Docs to edit the index.html (home page) and other pages if you want
 	
-	**Important tip**
+**Important tip**
+	
 	- rename *docs* folder to *_docs* => anything we want to modify for our website in local repo will be excuted in this folder.
+	
 	- create new folder and name it: *docs* => do not touch this folder, this will store data generated from the remote repo.
+	
 	- open mkdocs.yml in notepad++ => change to relevant information, such as: site name... and especially docs_dir: change from "docs" to "_docs", and site_dir: change from "site" to "docs"
 	
 	![](../images/github-edit.jpg)
@@ -147,12 +169,14 @@ Since the main aim of this week is to **have my own website deployed in class re
 Any modification is done later in local repo must be updated in remote repo following mkdocs build > git status > git add > git commit > git push.
 	
 	
-## Markdown - MKDOCS (useful link)
+## Building a website with Markdown - MKDOCS 
+
 
 - [Markdown](https://en.wikipedia.org/wiki/Markdown)
-- [Mkdocs-themes] (https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes)
-- Install mkdocs <https://www.mkdocs.org/user-guide/installation/#installing-mkdocs>
-- <https://www.mkdocs.org/getting-started/>
+- [Mkdocs-themes](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes)
+- [Install mkdocs](https://www.mkdocs.org/user-guide/installation/#installing-mkdocs)
+- <https://www.mkdocs.org/getting-started/)
 
 	
 
+	

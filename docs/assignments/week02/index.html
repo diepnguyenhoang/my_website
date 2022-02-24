@@ -347,8 +347,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#markdown-mkdocs-useful-link" class="md-nav__link">
-    Markdown - MKDOCS (useful link)
+  <a href="#building-a-website-with-markdown-mkdocs" class="md-nav__link">
+    Building a website with Markdown - MKDOCS
   </a>
   
 </li>
@@ -452,20 +452,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../projects/sample-project/" class="md-nav__link">
-        Another project
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -513,8 +499,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#markdown-mkdocs-useful-link" class="md-nav__link">
-    Markdown - MKDOCS (useful link)
+  <a href="#building-a-website-with-markdown-mkdocs" class="md-nav__link">
+    Building a website with Markdown - MKDOCS
   </a>
   
 </li>
@@ -565,18 +551,22 @@ For example, I want my header will be in red. I will write the rule like this to
  <img alt="" src="../../images/second-web.png" /></p>
 <p>3.JavaScript would not be our focus in this course but it is about the interactions/behaviors for users such as a list down menu&hellip; </p>
 <h2 id="vcs-version-control-system-gitlab-vs-github">VCS (Version Control System) - Gitlab vs Github<a class="headerlink" href="#vcs-version-control-system-gitlab-vs-github" title="Permanent link">&para;</a></h2>
-<p>VCS is a software which records changes, permits recall older versions, and enables collaboration. Among VCS softwares, we choose GIT (Gitlab, Github) due to its free, simple, fast, and open platform.</p>
+<p>VCS is a software which records changes, permits recall older versions, and enables collaboration. 
+Among VCS softwares, we choose GIT (https://git-scm.com/) due to its free, simple, fast, and open VCS platform.
+As learnt, there are 3 popular code hosting sites: GitHub, Bitbucket, GitLab. 
+In this course, we focus more on GitHub and GitLab which are both web-based GIT repository hosting service with distributed revision control and social features.</p>
 <p>Since the main aim of this week is to <strong>have my own website deployed in class repository (either gitlab or github)</strong>, so we need to do following steps:</p>
 <ol>
 <li>
-<p>Have an account in gitlab or github and create a new project. This will be the place we store our website.</p>
+<p><strong>Create an account</strong> in gitlab or github and <strong>create a new project</strong>. This will be the place we host our website.
+In my case, I first chose GitLab to be my GIT repository manager.</p>
 </li>
 <li>
-<p>Setup GIT in my computer (install from <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>, and <em>configure git</em> with my name and email address)
+<p><strong>Setup GIT</strong> in my computer (install GIT from <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>, and <strong>configure git</strong> with my name and email address
 <img alt="" src="../../images/git-config.png" /></p>
 </li>
 <li>
-<p>Generate SSH keys: we need these keys to authenticate ourselves with the system so that it knows we are the one who owns the project.</p>
+<p><strong>Generate SSH keys</strong>: we need these keys to authenticate ourselves with the system so that it knows we are the one who owns the project.</p>
 <ul>
 <li>
 <p>We have 2 types of SSH keys: private key (which will store in our local file), and public key (which everyone can see and get)</p>
@@ -586,7 +576,7 @@ For example, I want my header will be in red. I will write the rule like this to
 </li>
 </ul>
 <p><img alt="" src="../../images/ssh-key-1.jpg" /></p>
-<p>Then it will generate the 2 keys in my local repo.</p>
+<p>Then it will generate the 2 keys in my ssh configuration folder.</p>
 <p><img alt="" src="../../images/ssh-key-2.jpg" /></p>
 <p>To pair up with the remote repo in gitlab, we need to open the file .pub in text document</p>
 <p><img alt="" src="../../images/ssh-key-3.jpg" /></p>
@@ -595,7 +585,7 @@ For example, I want my header will be in red. I will write the rule like this to
 <p><img alt="" src="../../images/ssh-key-5.jpg" /></p>
 </li>
 <li>
-<p>Download the remote repository to our computer (creating a local repository), we need to clone it by using <em>git clone url</em></p>
+<p><strong>Download the remote repository</strong> to our computer (creating a local repository), we need to clone it by using <em>git clone url</em></p>
 <p>To get the URL, we need to go to our project created in gitlab, and copy it to the command</p>
 <p><img alt="" src="../../images/git-clone-1.jpg" /></p>
 <p>In the Git CMD, I had trouble on pasting the SSH URL, so I tried with the HTTPS as suggested from <a href="https://gitlab.com/gitlab-org/gitlab-foss/-/issues/54518">https://gitlab.com/gitlab-org/gitlab-foss/-/issues/54518</a> and it worked.</p>
@@ -605,63 +595,88 @@ Now, we can add our index.html and styles.css to the local folder.</p>
 <p><img alt="" src="../../images/git-clone-3.jpg" /></p>
 </li>
 <li>
-<p>Update the remote repo: any changes or modification from the local repo need to be updated so as to see in the remote repo. In the GIT CMD</p>
-<p><code>git status =&gt; to check the status of the remote repo
-git add . =&gt; to add any changes
-git commit -m "message" =&gt; to commit/confirm our modification
-git push =&gt; to update and move the changes to remote repo</code></p>
+<p><strong>Update the remote repo</strong>: any changes or modification from the local repo need to be updated so as to see in the remote repo. In the GIT CMD</p>
+<p>```
+git status =&gt; to check the status of the remote repo</p>
+<p>git add . =&gt; to append one or more files to the commit that is being created</p>
+<p>git commit -m &ldquo;message&rdquo; =&gt; to store the commit in local repo</p>
+<p>git push =&gt; to update and move the changes to remote repo
+```</p>
 </li>
 <li>
-<p>Host/Deploy our website in github</p>
-<p>I have been setting up using gitlab account, however, to facilitate the website deployment, we need to also set up CI/CD Pipelines which will help to automate our software delivery process. Unfortunately, gitlab will ask us to fill in our credit card information in order to use this function. It is a bit inconvenient for me to do so. Therefore, I will use github instead and set up from the beginning, but this time, we will write website using Markdowns (not HTML). </p>
+<p>Host/Deploy our website in GitHub</p>
+<p>I have been setting up using gitlab account, however, to facilitate the website deployment, we need to also set up CI/CD Pipelines which will help to automate our software delivery process. 
+Unfortunately, gitlab will ask us to fill in our credit card information in order to use this function. 
+It is a bit inconvenient for me to do so. 
+Therefore, I will I will choose GitHub as my code hosting site instead, which mean I have to set up all the things from the beginning (step 1,3&amp;4), and create my website using Markdowns (not HTML). </p>
 <ul>
-<li>Create new project in github</li>
-<li>Create new folder (local repository) for the website</li>
-<li>Copy the files template downloaded from the gitlab website (see the Markdown session below) to the local repo </li>
+<li>Create a new folder in my computer (local repository) for the website, here I named it as <em>fablabcoursehub</em></li>
+<li>Setup a new account and create a new repository (namedly <em>my_website</em>) in <a href="https://github.com/">GitHub</a></li>
+<li>Generate SSH Keys in GitHub to authenticate myself with the system: in the <em>my_website</em> remote repo, go to Setting (at the top right corner of the web) &gt; choose SSH and GPG Keys &gt; New SSH Key
+    <img alt="" src="../../images/added2.jpg" />
+    I type the title for the key as <em>fablabprojectmanagementkey</em> and copy the SSH key that I created above (3) to share it with GitHub and click SSH Key.
+    <img alt="" src="../../images/added3.jpg" />
+    <img alt="" src="../../images/added4.jpg" /></li>
+<li>Download the remote repo: in the newly created repository <em>my_website</em>, go to <em>Code</em> &gt; choose SSH &gt; copy the key URL &gt; in the command line: type <em>git clone and paste the key in</em> 
+    <img alt="" src="../images/added1.jpg" />
+    After the successful cloning, in my local repository <em>fablabcoursehub</em>, there is a folder named <em>my_website</em></li>
+<li>Copy the files of website template downloaded from the gitlab website (see the Markdown session below) to the local repo (folder <em>my_website</em>)</li>
 <li>
-<p>Remove the 2 files which we don’t need for github
+<p>Remove the 2 files which we don’t need for GitHub
 <img alt="" src="../../images/github-template.jpg" /></p>
 </li>
 <li>
 <p>Go to Docs to edit the index.html (home page) and other pages if you want</p>
 </li>
 </ul>
-<p><strong>Important tip</strong>
-- rename <em>docs</em> folder to <em>_docs</em> =&gt; anything we want to modify for our website in local repo will be excuted in this folder.
-- create new folder and name it: <em>docs</em> =&gt; do not touch this folder, this will store data generated from the remote repo.
-- open mkdocs.yml in notepad++ =&gt; change to relevant information, such as: site name&hellip; and especially docs_dir: change from &ldquo;docs&rdquo; to &ldquo;_docs&rdquo;, and site_dir: change from &ldquo;site&rdquo; to &ldquo;docs&rdquo;</p>
-<p><img alt="" src="../../images/github-edit.jpg" /></p>
-<ul>
-<li>Push the local repo to the remote repo using the guideline below. Make sure you are in the correct directory of the website in command line
-<img alt="" src="../../images/github-guideline.jpg" /></li>
-</ul>
-<p>After the git push, our remote repo should show the similar files as our local repo.</p>
-<p><img alt="" src="../../images/github-after.jpg" /></p>
-<ul>
-<li>At this stage, there will be one folder <em>docs</em> missing in the remote repo. Here, we need to go to the Setting in our github project, choose Pages</li>
-</ul>
-<p><img alt="" src="../../images/github-pages.jpg" /></p>
-<p>Go to command line (not git cmd), tell the system to build docs file =&gt; type mkdocs build
-<img alt="" src="../../images/github-mkdocs.jpg" /></p>
-<p>Git status
-<img alt="" src="../../images/github-status.jpg" /></p>
-<p>Git add .
-<img alt="" src="../../images/github-add.jpg" /></p>
-<p>Git commit
-<img alt="" src="../../images/github-commit.jpg" /></p>
-<p>Git push
-<img alt="" src="../../images/github-push.jpg" /></p>
-<p>We will finally have linked the file &ldquo;docs&rdquo; from local repo to remote repo
-<img alt="" src="../../images/github-after.jpg" /></p>
 </li>
 </ol>
+<p><strong>Important tip</strong></p>
+<div class="codehilite"><pre><span></span><code>- rename *docs* folder to *_docs* =&gt; anything we want to modify for our website in local repo will be excuted in this folder.
+
+- create new folder and name it: *docs* =&gt; do not touch this folder, this will store data generated from the remote repo.
+
+- open mkdocs.yml in notepad++ =&gt; change to relevant information, such as: site name... and especially docs_dir: change from &quot;docs&quot; to &quot;_docs&quot;, and site_dir: change from &quot;site&quot; to &quot;docs&quot;
+
+![](../images/github-edit.jpg)
+
+- Push the local repo to the remote repo using the guideline below. Make sure you are in the correct directory of the website in command line
+![](../images/github-guideline.jpg)
+
+After the git push, our remote repo should show the similar files as our local repo.
+
+![](../images/github-after.jpg)
+
+- At this stage, there will be one folder *docs* missing in the remote repo. Here, we need to go to the Setting in our github project, choose Pages
+
+![](../images/github-pages.jpg)
+
+Go to command line (not git cmd), tell the system to build docs file =&gt; type mkdocs build
+![](../images/github-mkdocs.jpg)
+
+Git status
+![](../images/github-status.jpg)
+
+Git add .
+![](../images/github-add.jpg)
+
+Git commit
+![](../images/github-commit.jpg)
+
+Git push
+![](../images/github-push.jpg)
+
+We will finally have linked the file &quot;docs&quot; from local repo to remote repo
+![](../images/github-after.jpg)
+</code></pre></div>
+
 <p>Any modification is done later in local repo must be updated in remote repo following mkdocs build &gt; git status &gt; git add &gt; git commit &gt; git push.</p>
-<h2 id="markdown-mkdocs-useful-link">Markdown - MKDOCS (useful link)<a class="headerlink" href="#markdown-mkdocs-useful-link" title="Permanent link">&para;</a></h2>
+<h2 id="building-a-website-with-markdown-mkdocs">Building a website with Markdown - MKDOCS<a class="headerlink" href="#building-a-website-with-markdown-mkdocs" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a></li>
-<li>[Mkdocs-themes] <a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes">https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes</a></li>
-<li>Install mkdocs <a href="https://www.mkdocs.org/user-guide/installation/#installing-mkdocs">https://www.mkdocs.org/user-guide/installation/#installing-mkdocs</a></li>
-<li><a href="https://www.mkdocs.org/getting-started/">https://www.mkdocs.org/getting-started/</a></li>
+<li><a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes">Mkdocs-themes</a></li>
+<li><a href="https://www.mkdocs.org/user-guide/installation/#installing-mkdocs">Install mkdocs</a></li>
+<li>&lt;https://www.mkdocs.org/getting-started/)</li>
 </ul>
 
               
