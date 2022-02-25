@@ -95,16 +95,13 @@ In my case, I first chose GitLab to be my GIT repository manager.
 5. **Update the remote repo**: any changes or modification from the local repo need to be updated so as to see in the remote repo. In the GIT CMD
 
 	```
-	git status => to check the status of the remote repo
-	
-	git add . => to append one or more files to the commit that is being created
-	
-	git commit -m "message" => to store the commit in local repo
-	
-	git push => to update and move the changes to remote repo
+	git status => to check the status of the remote repo.
+	git add . => to append one or more files to the commit that is being created.
+	git commit -m "message" => to store the commit in local repo.
+	git push => to update and move the changes to remote repo.
 	```
 
-6. Host/Deploy our website in GitHub
+6. Host/Deploy my website in GitHub
 
 	I have been setting up using gitlab account, however, to facilitate the website deployment, we need to also set up CI/CD Pipelines which will help to automate our software delivery process. 
 	Unfortunately, gitlab will ask us to fill in our credit card information in order to use this function. 
@@ -114,20 +111,38 @@ In my case, I first chose GitLab to be my GIT repository manager.
 	- Create a new folder in my computer (local repository) for the website, here I named it as *fablabcoursehub*
 	- Setup a new account and create a new repository (namedly *my_website*) in [GitHub](https://github.com/)
 	- Generate SSH Keys in GitHub to authenticate myself with the system: in the *my_website* remote repo, go to Setting (at the top right corner of the web) > choose SSH and GPG Keys > New SSH Key
-		![](../images/added2.jpg)
-		I type the title for the key as *fablabprojectmanagementkey* and copy the SSH key that I created above (3) to share it with GitHub and click SSH Key.
-		![](../images/added3.jpg)
-		![](../images/added4.jpg)
+	
+	![](../images/added2.jpg)
+
+	I type the title for the key as *fablabprojectmanagementkey* and copy the SSH key that I created above (3) to share it with GitHub and click SSH Key.
+
+	![](../images/added3.jpg)
+	
+	![](../images/added4.jpg)
+	
 	- Download the remote repo: in the newly created repository *my_website*, go to *Code* > choose SSH > copy the key URL > in the command line: type *git clone and paste the key in* 
-		![](../images/added1.jpg)
-		After the successful cloning, in my local repository *fablabcoursehub*, there is a folder named *my_website*
-	- Copy the files of website template downloaded from the gitlab website (see the Markdown session below) to the local repo (folder *my_website*)
-	- Remove the 2 files which we don’t need for GitHub
+	
+	![](../images/added1.jpg)
+	
+	After the successful cloning, in my local repository *fablabcoursehub*, there is a folder named *my_website*
+	
+## Building a website with Markdown - MKDOCS
+
+The website I am going to build is a **static web** which is built with much simple codes/language, allow simple navigation ... in comparison to dynamic web [Wiki](https://en.wikipedia.org/wiki/Static_web_page)
+
+As such, a **static web generator** is needed. In my case, I will use **MkDocs**, which is a fast, simple and downright gorgeous static site generator that's geared towards building project documentation. 
+
+Documentation source files are written in **Markdown**, which is a lightweight markup language for creating formatted text using a plain-text editor.[Wiki](https://en.wikipedia.org/wiki/Markdown)
+
+1. First, since *mkdocs* requires [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) (or pip), so I need to install the recent version of Python and then install *mkdocs* package using pip, following the [detailed guidelines](https://www.mkdocs.org/user-guide/installation/#installing-mkdocs)
+
+2. Then I will copy the website template downloaded from the [Fabacademy_oulu](https://gitlab.com/fabacademy_oulu/students_template_site) to my local repo (folder *my_website*)
+
+3. I remove the 2 files which I don’t need for GitHub
+	
 	![](../images/github-template.jpg)
-	
-	- Go to Docs to edit the index.html (home page) and other pages if you want
-	
-**Important tip**
+		
+4. **Important note before starting to edit the web**
 	
 	- rename *docs* folder to *_docs* => anything we want to modify for our website in local repo will be excuted in this folder.
 	
@@ -168,14 +183,7 @@ In my case, I first chose GitLab to be my GIT repository manager.
 	
 Any modification is done later in local repo must be updated in remote repo following mkdocs build > git status > git add > git commit > git push.
 	
-	
-## Building a website with Markdown - MKDOCS 
-
-
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)
-- [Mkdocs-themes](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes)
-- [Install mkdocs](https://www.mkdocs.org/user-guide/installation/#installing-mkdocs)
-- <https://www.mkdocs.org/getting-started/)
+- Go to Docs to edit the index.html (home page) and other pages if you want	
 
 	
 
