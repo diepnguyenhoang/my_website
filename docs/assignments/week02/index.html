@@ -602,11 +602,11 @@ Now, we can add our index.html and styles.css to the local folder.</p>
 <p><code>git push =&gt; to update and move the changes to remote repo.</code></p>
 </li>
 <li>
-<p>Host/Deploy my website in GitHub</p>
+<p><strong>Host/Deploy my website in GitHub</strong></p>
 <p>I have been setting up using gitlab account, however, to facilitate the website deployment, we need to also set up CI/CD Pipelines which will help to automate our software delivery process. 
 Unfortunately, gitlab will ask us to fill in our credit card information in order to use this function. 
 It is a bit inconvenient for me to do so. 
-Therefore, I will I will choose GitHub as my code hosting site instead, which mean I have to set up all the things from the beginning (step 1,3&amp;4), and create my website using Markdowns (not HTML). </p>
+Therefore, I will choose <strong>GitHub</strong> as my code hosting site instead, which mean I have to set up all the things from the beginning (step 1,3&amp;4), and create my website using Markdowns (not HTML). </p>
 <ul>
 <li>Create a new folder in my computer (local repository) for the website, here I named it as <em>fablabcoursehub</em></li>
 <li>Setup a new account and create a new repository (namedly <em>my_website</em>) in <a href="https://github.com/">GitHub</a></li>
@@ -632,14 +632,14 @@ Therefore, I will I will choose GitHub as my code hosting site instead, which me
 <p>First, since <em>mkdocs</em> requires <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> (or pip), so I need to install the recent version of Python and then install <em>mkdocs</em> package using pip, following the <a href="https://www.mkdocs.org/user-guide/installation/#installing-mkdocs">detailed guidelines</a></p>
 </li>
 <li>
-<p>Then I will copy the website template downloaded from the <a href="https://gitlab.com/fabacademy_oulu/students_template_site">Fabacademy_oulu</a> to my local repo (folder <em>my_website</em>). </p>
+<p>Then, since building a website theme is quite challenging for me, I will make use of the existing website template/theme, downloaded from the <a href="https://gitlab.com/fabacademy_oulu/students_template_site">Fabacademy_oulu</a>, and copied the whole downloaded folder to my local repo (folder <em>my_website</em>). </p>
 </li>
 <li>
 <p>I remove the 2 files which I don’t need for GitHub</p>
 <p><img alt="" src="../../images/github-template.jpg" /></p>
 </li>
 <li>
-<p><strong>Important note before starting to edit the web</strong></p>
+<p>Configure the site</p>
 <p>In the template folder which I have just downloaded:</p>
 <ul>
 <li>
@@ -649,9 +649,16 @@ Therefore, I will I will choose GitHub as my code hosting site instead, which me
 <p>create new folder and name it: <em>docs</em> =&gt; do not touch this folder, this will store data generated from the remote repo. This is my Local repo which stores different version of my projects inside my computer. In contrast, remote repo will store different version of my projects in a remote server.</p>
 </li>
 <li>
-<p>open the file named <strong>mkdocs.yml</strong> in notepad++. This is the <em>config file</em>, and I need to go to this file to set up the theme configuration option =&gt; change to relevant information, such as: site name&hellip; and especially docs_dir: change from &ldquo;docs&rdquo; to &ldquo;_docs&rdquo;, and site_dir: change from &ldquo;site&rdquo; to &ldquo;docs&rdquo;</p>
+<p>open the file named <strong>mkdocs.yml</strong> in notepad++. This is the <em>config file</em>, where I can customize my site information and also set the <a href="https://www.mkdocs.org/user-guide/choosing-your-theme/">theme configuration option</a>. For example:</p>
 </li>
 </ul>
+<p><code>Site name: Diep Nguyen Fablab Project Management Site.
+Site description: My Fabacademy site.
+Site Author: Diep Nguyen.
+Later it will show in the front-end as picture below</code></p>
+<p><code>docs_dir: change from "docs" to "_docs"</code></p>
+<p><code>site_dir: change from "site" to "docs"</code></p>
+<p><code>theme name: material</code></p>
 <p><img alt="" src="../../images/github-edit.jpg" /></p>
 <ul>
 <li>Push the local repo to the remote repo using the guideline below. Make sure you are in the correct directory of the website in command line
@@ -663,8 +670,8 @@ Therefore, I will I will choose GitHub as my code hosting site instead, which me
 <li>At this stage, there will be one folder <em>docs</em> missing in the remote repo. Here, we need to go to the Setting in our github project, choose Pages</li>
 </ul>
 <p><img alt="" src="../../images/github-pages.jpg" /></p>
-<p>Go to command line (not git cmd), tell the system to build docs file =&gt; type mkdocs build
-<img alt="" src="../../images/github-mkdocs.jpg" /></p>
+<p>Go to command line (not git cmd), tell the system to build docs file =&gt; type <strong>mkdocs build</strong>. </p>
+<p><img alt="" src="../../images/github-mkdocs.jpg" /></p>
 <p>Git status
 <img alt="" src="../../images/github-status.jpg" /></p>
 <p>Git add .
@@ -677,10 +684,42 @@ Therefore, I will I will choose GitHub as my code hosting site instead, which me
 <img alt="" src="../../images/github-after.jpg" /></p>
 </li>
 </ol>
-<p>Any modification is done later in local repo must be updated in remote repo following mkdocs build &gt; git status &gt; git add &gt; git commit &gt; git push.</p>
-<ul>
-<li>Go to Docs to edit the index.html (home page) and other pages if you want </li>
-</ul>
+<p>Any modification is done later in local repo must be updated in remote repo following commands:</p>
+<div class="codehilite"><pre><span></span><code>```
+mkdocs build &gt; git status &gt; git add . &gt; git commit &gt; git push
+```
+</code></pre></div>
+
+<ol>
+<li>Write/edit documentation site</li>
+</ol>
+<p>When the technical part has been set up, I start writing my documentation/assignment.
+First of all, I may start edit my About page by opening the file <em>index.md</em> in the folder <em>about</em> with Notepad++</p>
+<div class="codehilite"><pre><span></span><code>![](../images/added6.jpg)
+</code></pre></div>
+
+<p>Since this is the first time I get started with Markdown, I used the <a href="https://www.markdownguide.org/cheat-sheet/">Markdown cheatsheet</a> to help me get familiar with this basic language. 
+I also made use of <a href="https://dillinger.io/">Dillinger</a> - a nice website to help me practice and try these syntax while I learn about it.</p>
+<p>For example, if I want to add an image (which I have saved to the workspace folder &ldquo;images&rdquo; and named it &ldquo;avatar&rdquo;) to my document, I may use this syntax</p>
+<div class="codehilite"><pre><span></span><code>```
+![](../images/avatar.jpg)
+```
+</code></pre></div>
+
+<p>or if I want to add a table, I would write:</p>
+<div class="codehilite"><pre><span></span><code>```
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+```
+</code></pre></div>
+
+<p>or if I need to include the link to my documentation, I will use this string</p>
+<div class="codehilite"><pre><span></span><code>```
+[title](https://www.example.com)
+```
+</code></pre></div>
 
               
             </article>
