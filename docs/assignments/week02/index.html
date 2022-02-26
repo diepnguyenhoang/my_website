@@ -596,10 +596,10 @@ Now, we can add our index.html and styles.css to the local folder.</p>
 </li>
 <li>
 <p><strong>Update the remote repo</strong>: any changes or modification from the local repo need to be updated so as to see in the remote repo. In the GIT CMD</p>
-<p><code>git status =&gt; to check the status of the remote repo.
-git add . =&gt; to append one or more files to the commit that is being created.
-git commit -m "message" =&gt; to store the commit in local repo.
-git push =&gt; to update and move the changes to remote repo.</code></p>
+<p><code>git status =&gt; to check the status of the remote repo.</code></p>
+<p><code>git add . =&gt; to append one or more files to the commit that is being created.</code></p>
+<p><code>git commit -m "message" =&gt; to store the commit in local repo.</code></p>
+<p><code>git push =&gt; to update and move the changes to remote repo.</code></p>
 </li>
 <li>
 <p>Host/Deploy my website in GitHub</p>
@@ -632,7 +632,7 @@ Therefore, I will I will choose GitHub as my code hosting site instead, which me
 <p>First, since <em>mkdocs</em> requires <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> (or pip), so I need to install the recent version of Python and then install <em>mkdocs</em> package using pip, following the <a href="https://www.mkdocs.org/user-guide/installation/#installing-mkdocs">detailed guidelines</a></p>
 </li>
 <li>
-<p>Then I will copy the website template downloaded from the <a href="https://gitlab.com/fabacademy_oulu/students_template_site">Fabacademy_oulu</a> to my local repo (folder <em>my_website</em>)</p>
+<p>Then I will copy the website template downloaded from the <a href="https://gitlab.com/fabacademy_oulu/students_template_site">Fabacademy_oulu</a> to my local repo (folder <em>my_website</em>). </p>
 </li>
 <li>
 <p>I remove the 2 files which I don’t need for GitHub</p>
@@ -640,15 +640,16 @@ Therefore, I will I will choose GitHub as my code hosting site instead, which me
 </li>
 <li>
 <p><strong>Important note before starting to edit the web</strong></p>
+<p>In the template folder which I have just downloaded:</p>
 <ul>
 <li>
-<p>rename <em>docs</em> folder to <em>_docs</em> =&gt; anything we want to modify for our website in local repo will be excuted in this folder.</p>
+<p>rename <em>docs</em> folder to <em>_docs</em> =&gt; anything we want to modify for our website in local repo will be excuted in this folder. In other words, this is the workspace for documenting</p>
 </li>
 <li>
-<p>create new folder and name it: <em>docs</em> =&gt; do not touch this folder, this will store data generated from the remote repo.</p>
+<p>create new folder and name it: <em>docs</em> =&gt; do not touch this folder, this will store data generated from the remote repo. This is my Local repo which stores different version of my projects inside my computer. In contrast, remote repo will store different version of my projects in a remote server.</p>
 </li>
 <li>
-<p>open mkdocs.yml in notepad++ =&gt; change to relevant information, such as: site name&hellip; and especially docs_dir: change from &ldquo;docs&rdquo; to &ldquo;_docs&rdquo;, and site_dir: change from &ldquo;site&rdquo; to &ldquo;docs&rdquo;</p>
+<p>open the file named <strong>mkdocs.yml</strong> in notepad++. This is the <em>config file</em>, and I need to go to this file to set up the theme configuration option =&gt; change to relevant information, such as: site name&hellip; and especially docs_dir: change from &ldquo;docs&rdquo; to &ldquo;_docs&rdquo;, and site_dir: change from &ldquo;site&rdquo; to &ldquo;docs&rdquo;</p>
 </li>
 </ul>
 <p><img alt="" src="../../images/github-edit.jpg" /></p>

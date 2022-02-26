@@ -96,8 +96,17 @@ In my case, I first chose GitLab to be my GIT repository manager.
 
 	```
 	git status => to check the status of the remote repo.
+	```
+	
+	```
 	git add . => to append one or more files to the commit that is being created.
+	```
+	
+	```
 	git commit -m "message" => to store the commit in local repo.
+	```
+	
+	```
 	git push => to update and move the changes to remote repo.
 	```
 
@@ -136,19 +145,21 @@ Documentation source files are written in **Markdown**, which is a lightweight m
 
 1. First, since *mkdocs* requires [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) (or pip), so I need to install the recent version of Python and then install *mkdocs* package using pip, following the [detailed guidelines](https://www.mkdocs.org/user-guide/installation/#installing-mkdocs)
 
-2. Then I will copy the website template downloaded from the [Fabacademy_oulu](https://gitlab.com/fabacademy_oulu/students_template_site) to my local repo (folder *my_website*)
+2. Then I will copy the website template downloaded from the [Fabacademy_oulu](https://gitlab.com/fabacademy_oulu/students_template_site) to my local repo (folder *my_website*). 
 
 3. I remove the 2 files which I don’t need for GitHub
 	
 	![](../images/github-template.jpg)
 		
 4. **Important note before starting to edit the web**
+
+	In the template folder which I have just downloaded:
 	
-	- rename *docs* folder to *_docs* => anything we want to modify for our website in local repo will be excuted in this folder.
+	- rename *docs* folder to *_docs* => anything we want to modify for our website in local repo will be excuted in this folder. In other words, this is the workspace for documenting
 	
-	- create new folder and name it: *docs* => do not touch this folder, this will store data generated from the remote repo.
+	- create new folder and name it: *docs* => do not touch this folder, this will store data generated from the remote repo. This is my Local repo which stores different version of my projects inside my computer. In contrast, remote repo will store different version of my projects in a remote server.
 	
-	- open mkdocs.yml in notepad++ => change to relevant information, such as: site name... and especially docs_dir: change from "docs" to "_docs", and site_dir: change from "site" to "docs"
+	- open the file named **mkdocs.yml** in notepad++. This is the *config file*, and I need to go to this file to set up the theme configuration option => change to relevant information, such as: site name... and especially docs_dir: change from "docs" to "_docs", and site_dir: change from "site" to "docs"
 	
 	![](../images/github-edit.jpg)
 	
