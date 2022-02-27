@@ -261,7 +261,6 @@ After I have finished writing my assignment, I need to update to the remote repo
 	mkdocs build > git status > git add . > git commit > git push	
 	```
 	
-	
 This is how it looks like when I was using markdown to write my assignment on Notepad++
 	
 	![](../images/added7.jpg)
