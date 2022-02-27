@@ -236,3 +236,37 @@ I also made use of [Dillinger](https://dillinger.io/) - a nice website to help m
 
 For example, if I want to add an image (which I have saved to the workspace folder "images" and named it "avatar") to my document, I may use this syntax
 
+```
+![](../images/avatar.jpg)
+```
+
+or if I want to add a table, I would write:
+
+```
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+```
+
+or if I need to include the link to my documentation, I will use this string
+
+```
+[title](https://www.example.com)
+```
+
+After I have finished writing my assignment, I need to update to the remote repo following the same commands:
+
+```
+mkdocs build > git status > git add . > git commit > git push	
+```
+
+This is how it looks like when I was using markdown to write my assignment on Notepad++
+
+![](../images/added7.jpg)
+
+*Note:*
+
+	For pictures to be uploaded, I used [FastStone Photo Resizer](http://www.faststone.org/FSResizerDetail.htm) to help me compress the images so that it will not be problematic for the website operation.
+
+
