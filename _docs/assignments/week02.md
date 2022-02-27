@@ -42,7 +42,7 @@ To link the style to index.html, we need to write a rule <link rel="stylesheet" 
 ## VCS (Version Control System) - Gitlab vs Github
 
 VCS is a software which records changes, permits recall older versions, and enables collaboration. 
-Among VCS softwares, we choose GIT (https://git-scm.com/) due to its free, simple, fast, and open VCS platform.
+Among VCS softwares, we choose [GIT](https://git-scm.com/) due to its free, simple, fast, and open VCS platform.
 As learnt, there are 3 popular code hosting sites: GitHub, Bitbucket, GitLab. 
 In this course, we focus more on GitHub and GitLab which are both web-based GIT repository hosting service with distributed revision control and social features.
 
@@ -71,7 +71,7 @@ In my case, I first chose GitLab to be my GIT repository manager.
 
 	![](../images/ssh-key-3.jpg)
 
-	and copy it into our gitlab project (Preferences/SSH Keys)
+	and copy it into our gitlab project (go to Preferences > SSH Keys)
 
 	![](../images/ssh-key-4.jpg)
 
@@ -79,13 +79,9 @@ In my case, I first chose GitLab to be my GIT repository manager.
 
 4. **Download the remote repository** to our computer (creating a local repository), we need to clone it by using *git clone url*
 
-	To get the URL, we need to go to our project created in gitlab, and copy it to the command
+	To get the URL, we need to go to our project created in gitlab, and copy it and paste to the command with git clone
 
 	![](../images/git-clone-1.jpg)
-
-	In the Git CMD, I had trouble on pasting the SSH URL, so I tried with the HTTPS as suggested from <https://gitlab.com/gitlab-org/gitlab-foss/-/issues/54518> and it worked.
-
-	![](../images/git-clone-2.jpg)
 
 	After that, in our local repo, you will find a README text documentation, and that means we have successfully linked to the local repo from the remote repo.
 	Now, we can add our index.html and styles.css to the local folder.
@@ -129,11 +125,16 @@ In my case, I first chose GitLab to be my GIT repository manager.
 	
 	![](../images/added4.jpg)
 	
-	- Download the remote repo: in the newly created repository *my_website*, go to *Code* > choose SSH > copy the key URL > in the command line: type *git clone and paste the key in* 
+	- Download the remote repo: in the newly created repository *my_website*, go to *Code* > choose SSH > copy the key URL > paste it in the command line with git clone 
+	
+	```
+	git clone + git@github.com:diepnguyenhoang/my_website.git
+	```
 	
 	![](../images/added1.jpg)
 	
 	After the successful cloning, in my local repository *fablabcoursehub*, there is a folder named *my_website*
+	
 	
 ## Building a website with Markdown - MKDOCS
 
@@ -147,10 +148,10 @@ Documentation source files are written in **Markdown**, which is a lightweight m
 
 2. Then, since building a website theme is quite challenging for me, I will make use of the existing website template/theme, downloaded from the [Fabacademy_oulu](https://gitlab.com/fabacademy_oulu/students_template_site), and copied the whole downloaded folder to my local repo (folder *my_website*). 
 
-3. I remove the 2 files which I don’t need for GitHub
+3. The template folder I downloaded will contain these files (as picture shown below), but I will remove the 2 files which I don’t need for GitHub
 	
 	![](../images/github-template.jpg)
-		
+
 4. Configure the site
 
 	In the template folder which I have just downloaded:
@@ -182,45 +183,48 @@ Documentation source files are written in **Markdown**, which is a lightweight m
 	
 	![](../images/github-edit.jpg)
 	
-		
-	- Push the local repo to the remote repo using the guideline below. Make sure you are in the correct directory of the website in command line
+5. Push the local repo to the remote repo using the guideline below. Make sure you are in the correct directory of the website in command line
+
 	![](../images/github-guideline.jpg)
 	
-	After the git push, our remote repo should show the similar files as our local repo.
+	After the git push, our remote repo should show the similar files as in our local repo.
 	
 	![](../images/github-after.jpg)
 	
-	- At this stage, there will be one folder *docs* missing in the remote repo. Here, we need to go to the Setting in our github project, choose Pages
+6. At this stage, there will be one folder *docs* missing in the remote repo. Here, we need to go to the Setting in our github project, choose Pages. Select folder *docs* next to the Branch master and Save it.
 	
 	![](../images/github-pages.jpg)
 	
-	Go to command line (not git cmd), tell the system to build docs file => type **mkdocs build**. 
+	Go to command line (not git cmd), tell the system to build docs file => type **mkdocs build**. This command is to tell the system that everything we work on the workspace folder (_docs) will need to move to the local repo (docs), so that later when we use git commands (add., commit, push) it will be updated in the remote repo also.
 	
 	![](../images/github-mkdocs.jpg)
 	
+7. Update the remote repo with following commands
+
 	Git status
+	
 	![](../images/github-status.jpg)
 	
 	Git add .
+	
 	![](../images/github-add.jpg)
 	
 	Git commit
+	
 	![](../images/github-commit.jpg)
 	
 	Git push
+	
 	![](../images/github-push.jpg)
 	
-	We will finally have linked the file "docs" from local repo to remote repo
+	We will finally have linked the file *docs* from local repo to remote repo
+	
 	![](../images/github-after.jpg)
 	
-Any modification is done later in local repo must be updated in remote repo following commands:
+	
+8. Write/edit documentation site
 
-	```
-	mkdocs build > git status > git add . > git commit > git push
-	```
-5. Write/edit documentation site
-
-When the technical part has been set up, I start writing my documentation/assignment.
+When the technical part has been set up, I start to write my documentation/assignment.
 First of all, I may start edit my About page by opening the file *index.md* in the folder *about* with Notepad++
 
 	![](../images/added6.jpg)
@@ -247,6 +251,17 @@ or if I need to include the link to my documentation, I will use this string
 	[title](https://www.example.com)
 	```
 
+After I have finished writing my assignment, I need to update to the remote repo following the same commands:
 	
+	```
+	mkdocs build > git status > git add . > git commit > git push	
+	```
+	
+	
+This is how it looks like when I was using markdown to write my assignment on Notepad++
+	
+	![](../images/added7.jpg)
 
-	
+
+*Note*
+For pictures to be uploaded, I used [FastStone Photo Resizer](http://www.faststone.org/FSResizerDetail.htm) to help me compress the images so that it will not be problematic for the website operation.

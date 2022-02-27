@@ -552,7 +552,7 @@ For example, I want my header will be in red. I will write the rule like this to
 <p>3.JavaScript would not be our focus in this course but it is about the interactions/behaviors for users such as a list down menu&hellip; </p>
 <h2 id="vcs-version-control-system-gitlab-vs-github">VCS (Version Control System) - Gitlab vs Github<a class="headerlink" href="#vcs-version-control-system-gitlab-vs-github" title="Permanent link">&para;</a></h2>
 <p>VCS is a software which records changes, permits recall older versions, and enables collaboration. 
-Among VCS softwares, we choose GIT (https://git-scm.com/) due to its free, simple, fast, and open VCS platform.
+Among VCS softwares, we choose <a href="https://git-scm.com/">GIT</a> due to its free, simple, fast, and open VCS platform.
 As learnt, there are 3 popular code hosting sites: GitHub, Bitbucket, GitLab. 
 In this course, we focus more on GitHub and GitLab which are both web-based GIT repository hosting service with distributed revision control and social features.</p>
 <p>Since the main aim of this week is to <strong>have my own website deployed in class repository (either gitlab or github)</strong>, so we need to do following steps:</p>
@@ -580,16 +580,14 @@ In my case, I first chose GitLab to be my GIT repository manager.</p>
 <p><img alt="" src="../../images/ssh-key-2.jpg" /></p>
 <p>To pair up with the remote repo in gitlab, we need to open the file .pub in text document</p>
 <p><img alt="" src="../../images/ssh-key-3.jpg" /></p>
-<p>and copy it into our gitlab project (Preferences/SSH Keys)</p>
+<p>and copy it into our gitlab project (go to Preferences &gt; SSH Keys)</p>
 <p><img alt="" src="../../images/ssh-key-4.jpg" /></p>
 <p><img alt="" src="../../images/ssh-key-5.jpg" /></p>
 </li>
 <li>
 <p><strong>Download the remote repository</strong> to our computer (creating a local repository), we need to clone it by using <em>git clone url</em></p>
-<p>To get the URL, we need to go to our project created in gitlab, and copy it to the command</p>
+<p>To get the URL, we need to go to our project created in gitlab, and copy it and paste to the command with git clone</p>
 <p><img alt="" src="../../images/git-clone-1.jpg" /></p>
-<p>In the Git CMD, I had trouble on pasting the SSH URL, so I tried with the HTTPS as suggested from <a href="https://gitlab.com/gitlab-org/gitlab-foss/-/issues/54518">https://gitlab.com/gitlab-org/gitlab-foss/-/issues/54518</a> and it worked.</p>
-<p><img alt="" src="../../images/git-clone-2.jpg" /></p>
 <p>After that, in our local repo, you will find a README text documentation, and that means we have successfully linked to the local repo from the remote repo.
 Now, we can add our index.html and styles.css to the local folder.</p>
 <p><img alt="" src="../../images/git-clone-3.jpg" /></p>
@@ -617,9 +615,10 @@ Therefore, I will choose <strong>GitHub</strong> as my code hosting site instead
 <p><img alt="" src="../../images/added3.jpg" /></p>
 <p><img alt="" src="../../images/added4.jpg" /></p>
 <ul>
-<li>Download the remote repo: in the newly created repository <em>my_website</em>, go to <em>Code</em> &gt; choose SSH &gt; copy the key URL &gt; in the command line: type <em>git clone and paste the key in</em> </li>
+<li>Download the remote repo: in the newly created repository <em>my_website</em>, go to <em>Code</em> &gt; choose SSH &gt; copy the key URL &gt; paste it in the command line with git clone </li>
 </ul>
-<p><img alt="" src="../images/added1.jpg" /></p>
+<p><code>git clone + git@github.com:diepnguyenhoang/my_website.git</code></p>
+<p><img alt="" src="../../images/added1.jpg" /></p>
 <p>After the successful cloning, in my local repository <em>fablabcoursehub</em>, there is a folder named <em>my_website</em></p>
 </li>
 </ol>
@@ -635,7 +634,7 @@ Therefore, I will choose <strong>GitHub</strong> as my code hosting site instead
 <p>Then, since building a website theme is quite challenging for me, I will make use of the existing website template/theme, downloaded from the <a href="https://gitlab.com/fabacademy_oulu/students_template_site">Fabacademy_oulu</a>, and copied the whole downloaded folder to my local repo (folder <em>my_website</em>). </p>
 </li>
 <li>
-<p>I remove the 2 files which I don’t need for GitHub</p>
+<p>The template folder I downloaded will contain these files (as picture shown below), but I will remove the 2 files which I don’t need for GitHub</p>
 <p><img alt="" src="../../images/github-template.jpg" /></p>
 </li>
 <li>
@@ -660,40 +659,37 @@ Later it will show in the front-end as picture below</code></p>
 <p><code>site_dir: change from "site" to "docs"</code></p>
 <p><code>theme name: material</code></p>
 <p><img alt="" src="../../images/github-edit.jpg" /></p>
-<ul>
-<li>Push the local repo to the remote repo using the guideline below. Make sure you are in the correct directory of the website in command line
-<img alt="" src="../../images/github-guideline.jpg" /></li>
-</ul>
-<p>After the git push, our remote repo should show the similar files as our local repo.</p>
+</li>
+<li>
+<p>Push the local repo to the remote repo using the guideline below. Make sure you are in the correct directory of the website in command line</p>
+<p><img alt="" src="../../images/github-guideline.jpg" /></p>
+<p>After the git push, our remote repo should show the similar files as in our local repo.</p>
 <p><img alt="" src="../../images/github-after.jpg" /></p>
-<ul>
-<li>At this stage, there will be one folder <em>docs</em> missing in the remote repo. Here, we need to go to the Setting in our github project, choose Pages</li>
-</ul>
+</li>
+<li>
+<p>At this stage, there will be one folder <em>docs</em> missing in the remote repo. Here, we need to go to the Setting in our github project, choose Pages. Select folder <em>docs</em> next to the Branch master and Save it.</p>
 <p><img alt="" src="../../images/github-pages.jpg" /></p>
-<p>Go to command line (not git cmd), tell the system to build docs file =&gt; type <strong>mkdocs build</strong>. </p>
+<p>Go to command line (not git cmd), tell the system to build docs file =&gt; type <strong>mkdocs build</strong>. This command is to tell the system that everything we work on the workspace folder (_docs) will need to move to the local repo (docs), so that later when we use git commands (add., commit, push) it will be updated in the remote repo also.</p>
 <p><img alt="" src="../../images/github-mkdocs.jpg" /></p>
-<p>Git status
-<img alt="" src="../../images/github-status.jpg" /></p>
-<p>Git add .
-<img alt="" src="../../images/github-add.jpg" /></p>
-<p>Git commit
-<img alt="" src="../../images/github-commit.jpg" /></p>
-<p>Git push
-<img alt="" src="../../images/github-push.jpg" /></p>
-<p>We will finally have linked the file &ldquo;docs&rdquo; from local repo to remote repo
-<img alt="" src="../../images/github-after.jpg" /></p>
+</li>
+<li>
+<p>Update the remote repo with following commands</p>
+<p>Git status</p>
+<p><img alt="" src="../../images/github-status.jpg" /></p>
+<p>Git add .</p>
+<p><img alt="" src="../../images/github-add.jpg" /></p>
+<p>Git commit</p>
+<p><img alt="" src="../../images/github-commit.jpg" /></p>
+<p>Git push</p>
+<p><img alt="" src="../../images/github-push.jpg" /></p>
+<p>We will finally have linked the file <em>docs</em> from local repo to remote repo</p>
+<p><img alt="" src="../../images/github-after.jpg" /></p>
+</li>
+<li>
+<p>Write/edit documentation site</p>
 </li>
 </ol>
-<p>Any modification is done later in local repo must be updated in remote repo following commands:</p>
-<div class="codehilite"><pre><span></span><code>```
-mkdocs build &gt; git status &gt; git add . &gt; git commit &gt; git push
-```
-</code></pre></div>
-
-<ol>
-<li>Write/edit documentation site</li>
-</ol>
-<p>When the technical part has been set up, I start writing my documentation/assignment.
+<p>When the technical part has been set up, I start to write my documentation/assignment.
 First of all, I may start edit my About page by opening the file <em>index.md</em> in the folder <em>about</em> with Notepad++</p>
 <div class="codehilite"><pre><span></span><code>![](../images/added6.jpg)
 </code></pre></div>
@@ -720,6 +716,19 @@ I also made use of <a href="https://dillinger.io/">Dillinger</a> - a nice websit
 [title](https://www.example.com)
 ```
 </code></pre></div>
+
+<p>After I have finished writing my assignment, I need to update to the remote repo following the same commands:</p>
+<div class="codehilite"><pre><span></span><code>```
+mkdocs build &gt; git status &gt; git add . &gt; git commit &gt; git push   
+```
+</code></pre></div>
+
+<p>This is how it looks like when I was using markdown to write my assignment on Notepad++</p>
+<div class="codehilite"><pre><span></span><code>![](../images/added7.jpg)
+</code></pre></div>
+
+<p><em>Note</em>
+For pictures to be uploaded, I used <a href="http://www.faststone.org/FSResizerDetail.htm">FastStone Photo Resizer</a> to help me compress the images so that it will not be problematic for the website operation.</p>
 
               
             </article>
