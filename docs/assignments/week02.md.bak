@@ -71,7 +71,7 @@ In my case, I first chose GitLab to be my GIT repository manager.
 
 	![](../images/ssh-key-3.jpg)
 
-	and copy it into our gitlab project (Preferences/SSH Keys)
+	and copy it into our gitlab project (go to Preferences > SSH Keys)
 
 	![](../images/ssh-key-4.jpg)
 
@@ -79,13 +79,9 @@ In my case, I first chose GitLab to be my GIT repository manager.
 
 4. **Download the remote repository** to our computer (creating a local repository), we need to clone it by using *git clone url*
 
-	To get the URL, we need to go to our project created in gitlab, and copy it to the command
+	To get the URL, we need to go to our project created in gitlab, and copy it and paste to the command with git clone
 
 	![](../images/git-clone-1.jpg)
-
-	In the Git CMD, I had trouble on pasting the SSH URL, so I tried with the HTTPS as suggested from <https://gitlab.com/gitlab-org/gitlab-foss/-/issues/54518> and it worked.
-
-	![](../images/git-clone-2.jpg)
 
 	After that, in our local repo, you will find a README text documentation, and that means we have successfully linked to the local repo from the remote repo.
 	Now, we can add our index.html and styles.css to the local folder.
@@ -173,6 +169,8 @@ Documentation source files are written in **Markdown**, which is a lightweight m
 	Later it will show in the front-end as picture below
 	```
 	
+	![](../images/added5.jpg)
+	
 	```
 	docs_dir: change from "docs" to "_docs"
 	```
@@ -223,7 +221,7 @@ Documentation source files are written in **Markdown**, which is a lightweight m
 	
 	We will finally have linked the file *docs* from local repo to remote repo
 	
-	![](../images/github-after.jpg)
+	![](../images/github-final.jpg)
 	
 	
 8. Write/edit documentation site
@@ -241,6 +239,7 @@ For example, if I want to add an image (which I have saved to the workspace fold
 	```
 	![](../images/avatar.jpg)
 	```
+	
 or if I want to add a table, I would write:
 
 	```
@@ -249,13 +248,14 @@ or if I want to add a table, I would write:
 	| Header | Title |
 	| Paragraph | Text |
 	```
+	
 or if I need to include the link to my documentation, I will use this string
 
 	```
 	[title](https://www.example.com)
 	```
 
-After I have finished writing my assignment, I need to update to the remote repo modification is done later in local repo must be updated in remote repo following the same commands:
+After I have finished writing my assignment, I need to update to the remote repo following the same commands:
 	
 	```
 	mkdocs build > git status > git add . > git commit > git push	
@@ -266,5 +266,7 @@ This is how it looks like when I was using markdown to write my assignment on No
 	
 	![](../images/added7.jpg)
 
-*Note*
-For pictures to be uploaded, I used [FastStone Photo Resizer](http://www.faststone.org/FSResizerDetail.htm) to help me compress the images so that it will not be problematic for the website operation.
+
+*Note:*
+
+	For pictures to be uploaded, I used [FastStone Photo Resizer](http://www.faststone.org/FSResizerDetail.htm) to help me compress the images so that it will not be problematic for the website operation.

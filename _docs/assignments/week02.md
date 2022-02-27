@@ -169,6 +169,8 @@ Documentation source files are written in **Markdown**, which is a lightweight m
 	Later it will show in the front-end as picture below
 	```
 	
+	![](../images/added5.jpg)
+	
 	```
 	docs_dir: change from "docs" to "_docs"
 	```
@@ -219,7 +221,7 @@ Documentation source files are written in **Markdown**, which is a lightweight m
 	
 	We will finally have linked the file *docs* from local repo to remote repo
 	
-	![](../images/github-after.jpg)
+	![](../images/github-final.jpg)
 	
 	
 8. Write/edit documentation site
@@ -237,6 +239,7 @@ For example, if I want to add an image (which I have saved to the workspace fold
 	```
 	![](../images/avatar.jpg)
 	```
+	
 or if I want to add a table, I would write:
 
 	```
@@ -245,6 +248,7 @@ or if I want to add a table, I would write:
 	| Header | Title |
 	| Paragraph | Text |
 	```
+	
 or if I need to include the link to my documentation, I will use this string
 
 	```
@@ -257,11 +261,11 @@ After I have finished writing my assignment, I need to update to the remote repo
 	mkdocs build > git status > git add . > git commit > git push	
 	```
 	
-	
 This is how it looks like when I was using markdown to write my assignment on Notepad++
 	
 	![](../images/added7.jpg)
 
 
-*Note*
-For pictures to be uploaded, I used [FastStone Photo Resizer](http://www.faststone.org/FSResizerDetail.htm) to help me compress the images so that it will not be problematic for the website operation.
+*Note:*
+
+	For pictures to be uploaded, I used [FastStone Photo Resizer](http://www.faststone.org/FSResizerDetail.htm) to help me compress the images so that it will not be problematic for the website operation.
