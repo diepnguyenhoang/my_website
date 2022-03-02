@@ -108,7 +108,7 @@ I used Inkscape to create my sticker.
 	
 - Finally, I selected the desired direction for the text to be in the cirle.
 
-	![](../images/week03/Ink09.jpg)
+	![](../images/week03/Ink10.jpg)
 
 Overall, I find using Inkscape is a bit more convenient and easier to understand for me, because to this level, I don't have to deal with some kinds of layer (as in GIMP) which sometime confused me.
 

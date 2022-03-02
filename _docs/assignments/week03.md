@@ -149,6 +149,12 @@ Also, for me, the hardest part is the ability to imagine different perspectives 
 
 [2D Sknowflake design](../assets/snowflake1.svg)
 
+[2D Sknowflake PDF](../assets/snow.pdf)
+
 [2D Fish design](../assets/fish.svg)
 
+[2D Fish PDF](../assets/Fish.pdf)
+
 [3D design](../assets/Base.svg)
+
+[3D design universial](../assets/Base.stl)
