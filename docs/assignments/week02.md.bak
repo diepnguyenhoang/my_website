@@ -138,9 +138,9 @@ In my case, I first chose GitLab to be my GIT repository manager.
 	
 ## Building a website with Markdown - MKDOCS
 
-The website I am going to build is a **static web** which is built with much simple codes/language, allow simple navigation ... in comparison to dynamic web [Wiki](https://en.wikipedia.org/wiki/Static_web_page)
+The website I am going to build is a **static web** which is built with much simple codes/language, allow simple navigation ... in comparison to dynamic web [Wiki](https://en.wikipedia.org/wiki/Static_web_page). A static site is such in which the HTML code is fixed and is not generated dynamycally per HTTP Requests.
 
-As such, a **static web generator** is needed. In my case, I will use **MkDocs**, which is a fast, simple and downright gorgeous static site generator that's geared towards building project documentation. 
+In my case, I will use **static web generator**, namely **MKDOCS**, to help me simplify the process of building a website. MKDOCS is considered as a fast, simple and downright gorgeous static site generator that's geared towards building project documentation. 
 
 Documentation source files are written in **Markdown**, which is a lightweight markup language for creating formatted text using a plain-text editor.[Wiki](https://en.wikipedia.org/wiki/Markdown)
 
@@ -197,29 +197,29 @@ Documentation source files are written in **Markdown**, which is a lightweight m
 	
 	![](../images/github-pages.jpg)
 	
-	Go to command line (not git cmd), tell the system to build docs file => type **mkdocs build**. This command is to tell the system that everything we work on the workspace folder (_docs) will need to move to the local repo (docs), so that later when we use git commands (add., commit, push) it will be updated in the remote repo also.
+	Go to command line (not git cmd), tell the system to build docs file => type **mkdocs build**. This command is to take the source codes I wrote in markdown and generate the HTML, CSS and javascript code necessary to build the website based on my theme.
 	
 	![](../images/github-mkdocs.jpg)
 	
 7. Update the remote repo with following commands
 
-	Git status
+	*Git status* allows me to check the state of the remote repo. With this, I can see which changes have been shown, which haven’t, and which files aren’t being tracked by Git.
 	
 	![](../images/github-status.jpg)
 	
-	Git add .
+	*Git add .* will add any changes I made above in the working directory to the remote repo. It will tell Git to include updates to a particular file in the next commit.
 	
 	![](../images/github-add.jpg)
 	
-	Git commit
+	*Git commit* is used to create a commit, which is in a form of a snapshot of my repo at a specific times. Over the time, the commits  will tell a story of the history of my repository and how it came to be the way that it currently is.
 	
 	![](../images/github-commit.jpg)
 	
-	Git push
+	*Git push* can be considered as update or publish, and is used to update the remote repo with the local commits.
 	
 	![](../images/github-push.jpg)
 	
-	We will finally have linked the file *docs* from local repo to remote repo
+	We will finally have linked the file *docs* from local repo to remote repo.
 	
 	![](../images/github-final.jpg)
 	
@@ -248,4 +248,25 @@ or if I want to add a table, I would write:
 | Header | Title |
 | Paragraph | Text |
 ```
+
+or if I need to include the link to my documentation, I will use this string
+
+```
+[title](https://www.example.com)
+```
+
+After I have finished writing my assignment, I need to update to the remote repo following the same commands:
+
+```
+mkdocs build > git status > git add . > git commit > git push	
+```
+
+This is how it looks like when I was using markdown to write my assignment on Notepad++
+
+![](../images/added7.jpg)
+
+*Note:*
+
+	For pictures to be uploaded, I used [FastStone Photo Resizer](http://www.faststone.org/FSResizerDetail.htm) to help me compress the images so that it will not be problematic for the website operation.
+
 
