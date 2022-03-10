@@ -131,7 +131,7 @@ In my case, I first chose GitLab to be my GIT repository manager.
 	git clone + git@github.com:diepnguyenhoang/my_website.git
 	```
 	
-	![](../images/added1.png)
+	![](../images/added1.jpg)
 	
 	After the successful cloning, in my local repository *fablabcoursehub*, there is a folder named *my_website*
 	
