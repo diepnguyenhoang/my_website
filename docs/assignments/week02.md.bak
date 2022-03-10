@@ -138,7 +138,7 @@ In my case, I first chose GitLab to be my GIT repository manager.
 	
 ## Building a website with Markdown - MKDOCS
 
-The website I am going to build is a **static web** which is built with much simple codes/language, allow simple navigation ... in comparison to dynamic web [Wiki](https://en.wikipedia.org/wiki/Static_web_page). A static site is such in which the HTML code is fixed and is not generated dynamycally per HTTP Requests.
+The website I am going to build is a **static web** which is built with much simple codes/language, allow simple navigation ... in comparison to dynamic web [Wiki](https://en.wikipedia.org/wiki/Static_web_page). In a static site, the HTML code is fixed and is not generated dynamically per HTTP Requests.
 
 In my case, I will use **static web generator**, namely **MKDOCS**, to help me simplify the process of building a website. MKDOCS is considered as a fast, simple and downright gorgeous static site generator that's geared towards building project documentation. 
 
