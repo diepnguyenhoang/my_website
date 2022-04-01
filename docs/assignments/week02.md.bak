@@ -113,9 +113,9 @@ In my case, I first chose GitLab to be my GIT repository manager.
 	It is a bit inconvenient for me to do so. 
 	Therefore, I will choose **GitHub** as my code hosting site instead, which mean I have to set up all the things from the beginning (step 1,3&4), and create my website using Markdowns (not HTML). 
 	
-	- Create a new folder in my computer (local repository) for the website, here I named it as *fablabcoursehub*
+	- Create a new folder (namely *fablabcoursehub*) which will contain the workspace and local repository for the website.
 	- Setup a new account and create a new repository (namedly *my_website*) in [GitHub](https://github.com/)
-	- Generate SSH Keys in GitHub to authenticate myself with the system: in the *my_website* remote repo, go to Setting (at the top right corner of the web) > choose SSH and GPG Keys > New SSH Key
+	- Upload the SSH public key to Github: in the *my_website* remote repo, go to Setting (at the top right corner of the web) > choose SSH and GPG Keys > New SSH Key
 	
 	![](../images/added2.jpg)
 
@@ -131,20 +131,20 @@ In my case, I first chose GitLab to be my GIT repository manager.
 	git clone + git@github.com:diepnguyenhoang/my_website.git
 	```
 	
-	![](../images/added1.png)
+	![](../images/added1.jpg)
 	
 	After the successful cloning, in my local repository *fablabcoursehub*, there is a folder named *my_website*
 	
 	
 ## Building a website with Markdown - MKDOCS
 
-The website I am going to build is a **static web** which is built with much simple codes/language, allow simple navigation ... in comparison to dynamic web [Wiki](https://en.wikipedia.org/wiki/Static_web_page). In a static site, the HTML code is fixed and is not generated dynamically per HTTP Requests.
+The website I am going to build is a **static web** rather than a dynamic web [Wiki](https://en.wikipedia.org/wiki/Static_web_page). In a static site, the HTML code is fixed and is not generated dynamically per HTTP Requests.
 
-In my case, I will use **static web generator**, namely **MKDOCS**, to help me simplify the process of building a website. MKDOCS is considered as a fast, simple and downright gorgeous static site generator that's geared towards building project documentation. 
+In my case, I will use **static web generator**, namely [**MKDOCS**](https://www.mkdocs.org/), to help me simplify the process of building a website. MKDOCS is considered as a fast, simple and downright gorgeous static site generator that's geared towards building project documentation. 
 
 Documentation source files are written in **Markdown**, which is a lightweight markup language for creating formatted text using a plain-text editor.[Wiki](https://en.wikipedia.org/wiki/Markdown)
 
-1. First, since *mkdocs* requires [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) (or pip), so I need to install the recent version of Python and then install *mkdocs* package using pip, following the [detailed guidelines](https://www.mkdocs.org/user-guide/installation/#installing-mkdocs)
+1. First, since *mkdocs* requires [Python](https://en.wikipedia.org/wiki/Python_(programming_language)), so I need to install the recent version of Python and then install *mkdocs* package using pip, following the [detailed guidelines](https://www.mkdocs.org/user-guide/installation/#installing-mkdocs)
 
 2. Then, since building a website theme is quite challenging for me, I will make use of the existing website template/theme, downloaded from the [Fabacademy_oulu](https://gitlab.com/fabacademy_oulu/students_template_site), and copied the whole downloaded folder to my local repo (folder *my_website*). 
 
@@ -158,7 +158,7 @@ Documentation source files are written in **Markdown**, which is a lightweight m
 	
 	- rename *docs* folder to *_docs* => anything we want to modify for our website in local repo will be excuted in this folder. In other words, this is the workspace for documenting
 	
-	- create new folder and name it: *docs* => do not touch this folder, this will store data generated from the remote repo. This is my Local repo which stores different version of my projects inside my computer. In contrast, remote repo will store different version of my projects in a remote server.
+	- create new folder and name it: *docs* => this folder contains the website that will be deployed when we commit to github.
 	
 	- open the file named **mkdocs.yml** in notepad++. This is the *config file*, where I can customize my site information and also set the [theme configuration option](https://www.mkdocs.org/user-guide/choosing-your-theme/). For example:
 	
@@ -207,7 +207,7 @@ Documentation source files are written in **Markdown**, which is a lightweight m
 	
 	![](../images/github-status.jpg)
 	
-	*Git add .* will add any changes I made above in the working directory to the remote repo. It will tell Git to include updates to a particular file in the next commit.
+	*Git add .* defines the files that are going to be added to the next commit in the local repo. It will tell Git to include updates to a particular file in the next commit.
 	
 	![](../images/github-add.jpg)
 	
@@ -219,7 +219,7 @@ Documentation source files are written in **Markdown**, which is a lightweight m
 	
 	![](../images/github-push.jpg)
 	
-	We will finally have linked the file *docs* from local repo to remote repo.
+	Now the folder *docs* from local repo has been updated to remote repo.
 	
 	![](../images/github-final.jpg)
 	
@@ -265,8 +265,15 @@ This is how it looks like when I was using markdown to write my assignment on No
 
 ![](../images/added7.jpg)
 
+After after running the *mkdocs build* command, I will check how my content will be shown on my website
+
+![](../images/added8.jpg)
+
+
+
 *Note:*
 
-	For pictures to be uploaded, I used [FastStone Photo Resizer](http://www.faststone.org/FSResizerDetail.htm) to help me compress the images so that it will not be problematic for the website operation.
+For pictures to be uploaded, I used [FastStone Photo Resizer](http://www.faststone.org/FSResizerDetail.htm)
+to help me compress the images so that it will not be problematic for the website operation.
 
 
